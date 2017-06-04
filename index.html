@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="mdl/material.min.css">
+  <script src="mdl/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<!-- Uses a transparent header that draws on top of the layout's background -->
+  <style>
+  .demo-layout-transparent {
+    background: url('photos/title_image.jpg') center / cover;
+  }
+  .demo-layout-transparent .mdl-layout__header,
+  .demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+    color: white;
+  }
+  </style>
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Advanced Softwares</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">About Us</a>
+          <a class="mdl-navigation__link" href="">Products</a>
+          <a class="mdl-navigation__link" href="">Services</a>
+          <a class="mdl-navigation__link" href="">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Advanced Softwares</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">About Us</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="mdl-grid">
+        <!-- Grid column 1 -->
+        <div class="mdl-cell mdl-cell--6-col" style="background-color: red;">
+        6
+        </div>
+        <!-- Grid column 2 -->
+        <div class="mdl-cell mdl-cell--6-col" style="background-color: red;">
+        6
+        </div>
+      </div>
+    </main>
+  </div>
+</body>

@@ -19,10 +19,10 @@ $( window ).resize(function()
 function aboutDivison()
 {
     var aboutDiv = $("#about_us");
-
-        aboutDiv.append("<div class=\"mdl-cell mdl-cell--3-col\"></div>");
-        aboutDiv.append("<div class=\"mdl-cell mdl-cell--6-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\"><div class=\"mdl-card__supporting-text\"><h1>About Us</h1><p>"+aboutUsText+ "</p></div></div></div>")
-        aboutDiv.append("<div class=\"mdl-cell mdl-cell--3-col\"></div>");
+    aboutDiv.empty();
+    aboutDiv.append("<div class=\"mdl-cell mdl-cell--3-col\"></div>");
+    aboutDiv.append("<div class=\"mdl-cell mdl-cell--6-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\"><div class=\"mdl-card__supporting-text\"><h1>About Us</h1><p>"+aboutUsText+ "</p></div></div></div>")
+    aboutDiv.append("<div class=\"mdl-cell mdl-cell--3-col\"></div>");
 
 }
 

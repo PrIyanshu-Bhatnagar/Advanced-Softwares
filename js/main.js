@@ -40,26 +40,21 @@ function mainDivison()
         mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" style=\"background-color: red;\">6</div>");
     }
     //Tablet size
-    else if (/*$(window).height() >= 660 && */$(window).width() >= 550)
+    else if (/*$(window).height() >= 660 && */$(window).width() >= 450)
     {
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
         $('#title_heading').css("font-size","25px");
 
-//        aboutDiv.append("<div class=\"mdl-cell\" style=\"width: 100%\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\"><div class=\"mdl-card__supporting-text\"><h1>About Us</h1><p>"+aboutUsText+ "</p></div></div></div>")
-
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" style=\"background-color: red;\">4</div>");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" style=\"background-color: red;\">4</div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" style=\"background-color: red;\">6</div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" style=\"background-color: red;\">6</div>");
     }
     //Mobile size
     else
     {
         $('header').removeClass("mdl-layout--large-screen-only").addClass("mdl-layout--small-screen-only");
         $('#title_heading').css("font-size","15px");
-
-//        aboutDiv.append("<div class=\"mdl-cell\" style=\"width: 100%\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\"><div class=\"mdl-card__supporting-text\"><h1>About Us</h1><p>"+aboutUsText+ "</p></div></div></div>")
-
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" style=\"background-color: red;\">2</div>");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" style=\"background-color: red;\">2</div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" style=\"background-color: red;\">6</div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" style=\"background-color: red;\">6</div>");
     }
 
 }

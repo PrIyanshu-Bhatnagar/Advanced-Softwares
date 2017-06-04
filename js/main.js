@@ -45,16 +45,16 @@ function mainDivison()
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
         $('#title_heading').css("font-size","25px");
 
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" style=\"background-color: red;\">6</div>");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" style=\"background-color: red;\">6</div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" style=\"background-color: red;\">4</div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" style=\"background-color: red;\">4</div>");
     }
     //Mobile size
     else
     {
         $('header').removeClass("mdl-layout--large-screen-only").addClass("mdl-layout--small-screen-only");
         $('#title_heading').css("font-size","15px");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" style=\"background-color: red;\">6</div>");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" style=\"background-color: red;\">6</div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" style=\"background-color: red;\">2</div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" style=\"background-color: red;\">2</div>");
     }
 
 }

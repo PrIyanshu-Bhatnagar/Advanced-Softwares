@@ -43,6 +43,7 @@ function mainDivison()
     if (/*$(window).height() >= 768 && */$(window).width() >= 830)
     {
         $('h1').css("font-size","40px");
+        $('h1').css('padding','px 0px 0px 20px');
         $('p').css('font-size','25px');
         $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 24px 0px 0px');
@@ -51,6 +52,7 @@ function mainDivison()
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
     {
         $('h1').css("font-size","25px");
+        $('h1').css('padding','0px 0px 0px 15px');
         $('p').css('font-size','20px');
         $('#about_us').css('margin-top','10%');
         $('.mdl-navigation__link').css('padding','2px 12px 0px 0px');
@@ -59,6 +61,7 @@ function mainDivison()
     else
     {
         $('h1').css("font-size","15px");
+        $('h1').css('padding','0px 0px 0px 0px');
         $('p').css('font-size','8px');
         $('#about_us').css('margin-top','0%');
         $('.mdl-navigation__link').css('padding','2px 5px 0px 0px');

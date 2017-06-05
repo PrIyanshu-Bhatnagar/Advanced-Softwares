@@ -74,6 +74,13 @@ function cardWidthAdjustment() {
 function develop_Product() {
     var product_image = $("#product_image");
     var product_details = $("#product_details");
+
+    createCard(product_image,"product_image");
+    createCard(product_details, "product_details");
+
+    createCard(product_image,"product_image");
+    createCard(product_details, "product_details");
+
     createCard(product_image,"product_image");
     createCard(product_details, "product_details");
 }

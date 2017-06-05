@@ -97,6 +97,7 @@ function dependentOnSize()
     {
         $('h1').css("font-size","40px");
         $('h1').css('padding','px 0px 0px 20px');
+        $('#header2').css('font-size','35px');
         $('.content').css('top','65px');
         $('p').css('font-size','25px');
         $('#about_us').css('margin-top','15%');
@@ -107,6 +108,7 @@ function dependentOnSize()
     {
         $('h1').css("font-size","25px");
         $('h1').css('padding','0px 0px 0px 15px');
+        $('#header2').css('font-size','20px');
         $('p').css('font-size','20px');
         $('#about_us').css('margin-top','10%');
         $('.mdl-navigation__link').css('padding','2px 12px 0px 0px');
@@ -116,6 +118,7 @@ function dependentOnSize()
     {
         $('h1').css("font-size","15px");
         $('h1').css('padding','0px 0px 0px 0px');
+        $('#header2').css('font-size','12px');
         $('p').css('font-size','8px');
         $('#about_us').css('margin-top','10%');
         $('.mdl-navigation__link').css('padding','2px 5px 0px 0px');

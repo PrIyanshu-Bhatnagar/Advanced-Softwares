@@ -32,7 +32,7 @@ function mainDivison()
 
     mainDiv = $("#product_grid");
     mainDiv.append("<h1 style=\"margin: 24px 0px 0px 0px; padding: 0px 0px 0px 20px;\">Products</h1>");
-    mainDiv.append("<div class=\"mdl-grid\" id=\"products\"></div>");
+    mainDiv.append("<div class=\"mdl-grid\" id=\"products\")></div>");
     mainDiv = $('#products');
     //Desktop Screen size
     if (/*$(window).height() >= 768 && */$(window).width() >= 830)
@@ -40,7 +40,7 @@ function mainDivison()
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
         $('#title_heading').css("font-size","40px");
 
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" id=\"product_image\"></div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" id=\"product_image\" style(\"width: calc(100% - 16px);\"></div>");
         //mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" id=\"product_details\"></div>");
     }
     //Tablet size
@@ -49,7 +49,7 @@ function mainDivison()
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
         $('#title_heading').css("font-size","25px");
 
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" id=\"product_image\"></div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" id=\"product_image\" style(\"width: calc(100% - 16px);\"></div>");
         //mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" id=\"product_details\"></div>");
     }
     //Mobile size
@@ -57,7 +57,8 @@ function mainDivison()
     {
         $('header').removeClass("mdl-layout--large-screen-only").addClass("mdl-layout--small-screen-only");
         $('#title_heading').css("font-size","15px");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" id=\"product_image\"></div>");
+
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" id=\"product_image\" style(\"width: calc(100% - 16px);\"></div>");
        // mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" id=\"product_details\"></div>");
     }
     develop_Product();

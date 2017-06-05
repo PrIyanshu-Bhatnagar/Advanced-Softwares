@@ -2,12 +2,19 @@
     font-family: 'Kaushan Script', cursive;
     color: white;
 }
-
+#about_us{
+    margin-top:15%;
+}
 h1{
     color: white;
+    margin: 24px 0px 0px 0px;
+    padding: 0px 0px 0px 20px;
 }
 p{
     color: white;
+    font-size: 25px;
+    margin: 24px 0px 0px 0px;
+    padding: 0px 0px 0px 20px;
 }
 h2{
     color: white;
@@ -22,4 +29,17 @@ h2{
     right:0px;
     bottom:0px;
     overflow-y:scroll;
+}
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+    opacity: 0.95;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width: 100%
 }

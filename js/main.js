@@ -1,10 +1,10 @@
-var aboutUsText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend laciniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend laciniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend laciniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend laciniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend laciniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend laciniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend laciniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend laciniaLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...";
-
+var aboutUsText = "\"We are in this business since 1992\""
 $(document).ready(function()
 {
     aboutDivison();
     mainDivison();
     cardWidthAdjustment();
+    serviceDivison();
 });
 
 $( window ).resize(function()
@@ -12,15 +12,16 @@ $( window ).resize(function()
     aboutDivison();
     mainDivison();
     cardWidthAdjustment();
+    serviceDivison();
 });
 
 function aboutDivison()
 {
     var aboutDiv = $("#about_us");
     aboutDiv.empty();
-    aboutDiv.append("<div class=\"mdl-cell mdl-cell--3-col\"></div>");
-    aboutDiv.append("<div class=\"mdl-cell mdl-cell--6-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text\"><h1>About Us</h1><p>"+aboutUsText+ "</p></div></div></div>")
-    aboutDiv.append("<div class=\"mdl-cell mdl-cell--3-col\"></div>");
+    //aboutDiv.append("<div class=\"mdl-cell mdl-cell--1-col\" ></div>");
+    aboutDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" align=\"center\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text\"><h1 align=\"center\">About Us</h1><p align=\"center\">"+aboutUsText+ "</p></div></div></div>")
+    //aboutDiv.append("<div class=\"mdl-cell mdl-cell--1-col\" ></div>");
 
 }
 
@@ -31,7 +32,7 @@ function mainDivison()
     mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text\" id=\"product_grid\" style=\"width:100%; padding:0px\"></div></div></div>");
 
     mainDiv = $("#product_grid");
-    mainDiv.append("<h1 style=\"margin: 24px 0px 0px 0px; padding: 0px 0px 0px 20px;\">Products</h1>");
+    mainDiv.append("<h1>Products</h1>");
     mainDiv.append("<div class=\"mdl-grid\" id=\"products\")></div>");
     mainDiv = $('#products');
 
@@ -65,7 +66,7 @@ function createCard(object,id){
 }
 
 function cardWidthAdjustment() {
-    var mainWidth = $(window).width() - 20;
+    var mainWidth = $(window).width();
     $(".mdl-layout__content").css('width', mainWidth);
 }
 
@@ -86,16 +87,26 @@ function product()
 {
     var busyCard = $('#1');
     busyCard.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
-    busyCard.append("<h2>Busy</div>");
+    busyCard.append("<div style=\"width:50%\"><h2>Busy<div></div>");
 
     var reddix = $('#2');
+    reddix.append("<div style=\"width:50%\"><h2>Reddix<div></div>");
     reddix.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
-    reddix.append("<h2>Reddix</div>");
 
     var rely = $('#3');
     rely.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
-    rely.append("<h2>Rely</div>");
+    rely.append("<div style=\"width:50%\"><h2>Rely<div></div>");
 }
 
+function serviceDivison() {
+    var serDiv = $('#services_grid');
+    serDiv.empty();
+    serDiv.append("<div class=\"mdl-cell mdl-cell--12-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text\" id=\"service_text\" style=\"width:100%; padding:0px\"></div></div></div>");
+
+    var serText = $('#service_text');
+    serText.prepend("<p>"+aboutUsText+"</p>");
+    serText.prepend("<h1>Services</h1>");
+
+}
 
 

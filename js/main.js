@@ -90,6 +90,7 @@ function mainDivison()
         $('header').removeClass("mdl-layout--large-screen-only").addClass("mdl-layout--small-screen-only");
         $('h1').css("font-size","15px");
         $('h2').css("font-size","12px");
+        $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 5px 0px 0px');
     }
     develop_Product();

@@ -6,6 +6,7 @@ $(document).ready(function()
     serviceDivison();
     mainDivison();
     cardWidthAdjustment();
+    dependentOnSize();
 });
 
 $( window ).resize(function()
@@ -14,6 +15,7 @@ $( window ).resize(function()
     serviceDivison();
     mainDivison();
     cardWidthAdjustment();
+    dependentOnSize();
 });
 
 function aboutDivison()
@@ -40,32 +42,6 @@ function mainDivison()
     mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" id=\"product_image\" style(\"width: calc(100% - 16px);\"></div>");
 
     //Desktop Screen size
-    if (/*$(window).height() >= 768 && */$(window).width() >= 830)
-    {
-        $('h1').css("font-size","40px");
-        $('h1').css('padding','px 0px 0px 20px');
-        $('p').css('font-size','25px');
-        $('#about_us').css('margin-top','15%');
-        $('.mdl-navigation__link').css('padding','2px 24px 0px 0px');
-    }
-    //Tablet size
-    else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
-    {
-        $('h1').css("font-size","25px");
-        $('h1').css('padding','0px 0px 0px 15px');
-        $('p').css('font-size','20px');
-        $('#about_us').css('margin-top','10%');
-        $('.mdl-navigation__link').css('padding','2px 12px 0px 0px');
-    }
-    //Mobile size
-    else
-    {
-        $('h1').css("font-size","15px");
-        $('h1').css('padding','0px 0px 0px 0px');
-        $('p').css('font-size','8px');
-        $('#about_us').css('margin-top','10%');
-        $('.mdl-navigation__link').css('padding','2px 5px 0px 0px');
-    }
     develop_Product();
 }
 function createCard(object,id){
@@ -115,4 +91,33 @@ function serviceDivison() {
     serText.prepend("<h1>Services</h1>");
 }
 
-
+function dependentOnSize()
+{
+    if (/*$(window).height() >= 768 && */$(window).width() >= 830)
+    {
+        $('h1').css("font-size","40px");
+        $('h1').css('padding','px 0px 0px 20px');
+        $('.content').css('top','65px');
+        $('p').css('font-size','25px');
+        $('#about_us').css('margin-top','15%');
+        $('.mdl-navigation__link').css('padding','2px 24px 0px 0px');
+    }
+    //Tablet size
+    else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
+    {
+        $('h1').css("font-size","25px");
+        $('h1').css('padding','0px 0px 0px 15px');
+        $('p').css('font-size','20px');
+        $('#about_us').css('margin-top','10%');
+        $('.mdl-navigation__link').css('padding','2px 12px 0px 0px');
+    }
+    //Mobile size
+    else
+    {
+        $('h1').css("font-size","15px");
+        $('h1').css('padding','0px 0px 0px 0px');
+        $('p').css('font-size','8px');
+        $('#about_us').css('margin-top','10%');
+        $('.mdl-navigation__link').css('padding','2px 5px 0px 0px');
+    }
+}

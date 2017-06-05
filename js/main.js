@@ -87,8 +87,8 @@ function serviceDivison() {
     serDiv.append("<div class=\"mdl-cell mdl-cell--12-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text\" id=\"service_text\" style=\"width:100%; padding:0px\"></div></div></div>");
 
     var serText = $('#service_text');
-    serText.prepend("<p>"+aboutUsText+"</p>");
-    serText.prepend("<h1>Services</h1>");
+    serText.prepend("<p align=\"center\">"+aboutUsText+"</p>");
+    serText.prepend("<h1 align=\"center\">Services</h1>");
 }
 
 function dependentOnSize()

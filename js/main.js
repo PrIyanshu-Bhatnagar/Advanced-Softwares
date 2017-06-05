@@ -63,7 +63,7 @@ function mainDivison()
         $('h1').css("font-size","15px");
         $('h1').css('padding','0px 0px 0px 0px');
         $('p').css('font-size','8px');
-        $('#about_us').css('margin-top','0%');
+        $('#about_us').css('margin-top','10%');
         $('.mdl-navigation__link').css('padding','2px 5px 0px 0px');
     }
     develop_Product();

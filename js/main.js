@@ -5,7 +5,6 @@ $(document).ready(function()
     aboutDivison();
     mainDivison();
     cardWidthAdjustment();
-    develop_Product();
 });
 
 $( window ).resize(function()
@@ -13,7 +12,6 @@ $( window ).resize(function()
     aboutDivison();
     mainDivison();
     cardWidthAdjustment();
-    develop_Product();
 });
 
 function aboutDivison()
@@ -30,41 +28,53 @@ function mainDivison()
 {
     var mainDiv = $("#main_grid");
     mainDiv.empty();
+    mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\"><div class=\"mdl-card__supporting-text\" id=\"product_grid\" style=\"width:100%; padding:0px\"></div></div></div>");
+
+    mainDiv = $("#product_grid");
+    mainDiv.append("<div class=\"mdl-grid\" id=\"products\"></div>");
+    mainDiv = $('#products');
     //Desktop Screen size
-    if (/*$(window).height() >= 768 && */$(window).width() >= 1024)
+    if (/*$(window).height() >= 768 && */$(window).width() >= 830)
     {
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
         $('#title_heading').css("font-size","40px");
 
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" style=\"background-color: red;\">6</div>");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" style=\"background-color: red;\">6</div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" id=\"product_image\"></div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" id=\"product_details\"></div>");
     }
     //Tablet size
-    else if (/*$(window).height() >= 660 && */$(window).width() >= 450)
+    else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
     {
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
         $('#title_heading').css("font-size","25px");
 
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" style=\"background-color: red;\">4</div>");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" style=\"background-color: red;\">4</div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" id=\"product_image\"></div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" id=\"product_details\"></div>");
     }
     //Mobile size
     else
     {
         $('header').removeClass("mdl-layout--large-screen-only").addClass("mdl-layout--small-screen-only");
         $('#title_heading').css("font-size","15px");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" style=\"background-color: red;\">2</div>");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" style=\"background-color: red;\">2</div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" id=\"product_image\"></div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" id=\"product_details\"></div>");
     }
-
+    develop_Product();
+}
+function createCard(object,id){
+object.append("<div class=\"mdl-cell mdl-cell--12-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\"><div class=\"mdl-card__supporting-text\" id=\"" +id + "\"></div></div></div>");
 }
 
-function cardWidthAdjustment(argument) {
+function cardWidthAdjustment() {
     var mainWidth = $(window).width() - 20;
     $(".mdl-layout__content").css('width', mainWidth);
 }
 
 function develop_Product() {
+    var product_image = $("#product_image");
+    var product_details = $("#product_details");
 
+    createCard(product_image,"product_image");
+    createCard(product_details, "product_details");
 }
 

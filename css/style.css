@@ -5,15 +5,22 @@
 #about_us{
     margin-top:15%;
 }
+#footer_logo{
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 14px;
+}
 h1{
     color: white;
-    margin: 24px 0px 15px 0px;
+    margin: 15px 0px 15px 0px;
     padding: 0px 0px 0px 20px;
 }
 p{
     color: white;
     font-size: 25px;
-    margin: 24px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     padding: 0px 0px 0px 20px;
 }
 h2{

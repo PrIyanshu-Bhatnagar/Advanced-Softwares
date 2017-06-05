@@ -1,18 +1,48 @@
+var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+$window.on('scroll', check_if_in_view);
+
+$window.on('scroll resize', check_if_in_view);
+
+$window.trigger('scroll');
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+
 var aboutUsText = "\"We are in this business since 1992\""
 $(document).ready(function()
 {
     aboutDivison();
+    serviceDivison();
     mainDivison();
     cardWidthAdjustment();
-    serviceDivison();
 });
 
 $( window ).resize(function()
 {
     aboutDivison();
+    serviceDivison();
     mainDivison();
     cardWidthAdjustment();
-    serviceDivison();
 });
 
 function aboutDivison()
@@ -20,7 +50,7 @@ function aboutDivison()
     var aboutDiv = $("#about_us");
     aboutDiv.empty();
     //aboutDiv.append("<div class=\"mdl-cell mdl-cell--1-col\" ></div>");
-    aboutDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" align=\"center\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text\"><h1 align=\"center\">About Us</h1><p align=\"center\">"+aboutUsText+ "</p></div></div></div>")
+    aboutDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" align=\"center\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text animation-element\"><h1 align=\"center\">About Us</h1><p align=\"center\">"+aboutUsText+ "</p></div></div></div>")
     //aboutDiv.append("<div class=\"mdl-cell mdl-cell--1-col\" ></div>");
 
 }
@@ -42,27 +72,30 @@ function mainDivison()
     if (/*$(window).height() >= 768 && */$(window).width() >= 830)
     {
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
-        $('#title_heading').css("font-size","40px");
-
+        $('h1').css("font-size","40px");
+        $('h2').css("font-size","35px");
+        $('.mdl-navigation__link').css('padding','2px 24px 0px 0px');
     }
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
     {
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
-        $('#title_heading').css("font-size","25px");
-
+        $('h1').css("font-size","25px");
+        $('h2').css("font-size","20px");
+        $('.mdl-navigation__link').css('padding','2px 12px 0px 0px');
     }
     //Mobile size
     else
     {
         $('header').removeClass("mdl-layout--large-screen-only").addClass("mdl-layout--small-screen-only");
-        $('#title_heading').css("font-size","15px");
-
+        $('h1').css("font-size","15px");
+        $('h2').css("font-size","12px");
+        $('.mdl-navigation__link').css('padding','2px 5px 0px 0px');
     }
     develop_Product();
 }
 function createCard(object,id){
-    object.append("<div class=\"mdl-cell mdl-cell--12-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text\" style=\"width: 100%\"><div class=\"mdl-grid\" id=\"" +id + "\"></div></div></div></div>");
+    object.append("<div class=\"mdl-cell mdl-cell--12-col animation-element\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text\" style=\"width: 100%\"><div class=\"mdl-grid\" id=\"" +id + "\"></div></div></div></div>");
 }
 
 function cardWidthAdjustment() {
@@ -106,7 +139,6 @@ function serviceDivison() {
     var serText = $('#service_text');
     serText.prepend("<p>"+aboutUsText+"</p>");
     serText.prepend("<h1>Services</h1>");
-
 }
 
 

@@ -16,10 +16,10 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">About Us </a>
-        <a class="mdl-navigation__link" href="">Products </a>
-        <a class="mdl-navigation__link" href="">Services </a>
-        <a class="mdl-navigation__link" href="">Contact Us </a>
+        <a class="mdl-navigation__link" href="#navigateToAboutUs">About Us </a>
+        <a class="mdl-navigation__link" href="#main_grid">Products </a>
+        <a class="mdl-navigation__link" href="#services_grid">Services </a>
+        <a class="mdl-navigation__link" href="#navigateToContactUs">Contact Us </a>
       </nav>
     </div>
   </header>
@@ -40,7 +40,7 @@
           color: transparent;
         }
         </style>
-      <div>
+      <div id="navigateToAboutUs">
           <div class="container">
             <video id="video" width="100%" height="100%" autoplay="true" loop="loop" muted="muted">
                 <source src="photos/Productive-Morning/MP4/Productive-Morning.mp4" type="video/mp4" />
@@ -52,12 +52,21 @@
             </div>
           </div>
       </div>
-      <div class="mdl-grid" id="main_grid">
+      <div class="mdl-grid" id="main_grid" style="margin-top: 10%">
           <!-- Products Script -->
       </div>
-      <div class="mdl-grid" id="services_grid">
+      <div class="mdl-grid" id="services_grid" style="margin-top: 5%">
           <!-- Services Script -->
       </div>
+          <footer class="mdl-mini-footer mdl-shadow--2dp" id="navigateToContactUs" style="margin-top: 10%">
+            <div class="mdl-mini-footer__left-section">
+              <div class="mdl-logo"><h3 id="footer_logo">Advanced Softwares</h3></div>
+              <ul class="mdl-mini-footer__link-list">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+              </ul>
+            </div>
+          </footer>
   </main>
   <script type="text/javascript" src="js/main.js"></script>
 </body>

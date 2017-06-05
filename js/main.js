@@ -63,7 +63,7 @@ function mainDivison()
     develop_Product();
 }
 function createCard(object,id){
-object.append("<div class=\"mdl-cell mdl-cell--12-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\"><div class=\"mdl-card__supporting-text\" id=\"" +id + "\"></div></div></div>");
+    object.append("<div class=\"mdl-cell mdl-cell--12-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\"><div class=\"mdl-card__supporting-text\" id=\"" +id + "\"></div></div></div>");
 }
 
 function cardWidthAdjustment() {

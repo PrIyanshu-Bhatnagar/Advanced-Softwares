@@ -34,14 +34,15 @@ function mainDivison()
     mainDiv.append("<h1 style=\"margin: 24px 0px 0px 0px; padding: 0px 0px 0px 20px;\">Products</h1>");
     mainDiv.append("<div class=\"mdl-grid\" id=\"products\")></div>");
     mainDiv = $('#products');
+
+    mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" id=\"product_image\" style(\"width: calc(100% - 16px);\"></div>");
+
     //Desktop Screen size
     if (/*$(window).height() >= 768 && */$(window).width() >= 830)
     {
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
         $('#title_heading').css("font-size","40px");
 
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" id=\"product_image\" style(\"width: calc(100% - 16px);\"></div>");
-        //mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" id=\"product_details\"></div>");
     }
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
@@ -49,8 +50,6 @@ function mainDivison()
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
         $('#title_heading').css("font-size","25px");
 
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" id=\"product_image\" style(\"width: calc(100% - 16px);\"></div>");
-        //mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" id=\"product_details\"></div>");
     }
     //Mobile size
     else
@@ -58,13 +57,11 @@ function mainDivison()
         $('header').removeClass("mdl-layout--large-screen-only").addClass("mdl-layout--small-screen-only");
         $('#title_heading').css("font-size","15px");
 
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" id=\"product_image\" style(\"width: calc(100% - 16px);\"></div>");
-       // mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" id=\"product_details\"></div>");
     }
     develop_Product();
 }
 function createCard(object,id){
-    object.append("<div class=\"mdl-cell mdl-cell--12-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text\" id=\"" +id + "\"></div></div></div>");
+    object.append("<div class=\"mdl-cell mdl-cell--12-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text\" style=\"width: 100%\"><div class=\"mdl-grid\" id=\"" +id + "\"></div></div></div></div>");
 }
 
 function cardWidthAdjustment() {
@@ -74,15 +71,31 @@ function cardWidthAdjustment() {
 
 function develop_Product() {
     var product_image = $("#product_image");
-    var product_details = $("#product_details");
 
-    createCard(product_image,"product_image");
-    //createCard(product_details, "product_details");
+    createCard(product_image,"1"); //Id 1 is Busy
 
-    createCard(product_image,"product_image");
-    //createCard(product_details, "product_details");
+    createCard(product_image,"2");//Id 2 is Reddix
 
-    createCard(product_image,"product_image");
-    //createCard(product_details, "product_details");
+    createCard(product_image,"3");//Id 3 is Rely
+
+    product();
+
 }
+
+function product()
+{
+    var busyCard = $('#1');
+    busyCard.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
+    busyCard.append("<h2>Busy</div>");
+
+    var reddix = $('#2');
+    reddix.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
+    reddix.append("<h2>Reddix</div>");
+
+    var rely = $('#3');
+    rely.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
+    rely.append("<h2>Rely</div>");
+}
+
+
 

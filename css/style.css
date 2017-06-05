@@ -23,9 +23,10 @@ p{
     margin: 20px 0px 0px 0px;
     padding: 0px 0px 0px 20px;
 }
-h2{
+#header2{
     color: white;
     margin: 0px 0px 0px 20px;
+    font-size: 35px;
 }
 
 .content

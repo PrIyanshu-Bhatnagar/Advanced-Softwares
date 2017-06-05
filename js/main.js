@@ -40,8 +40,8 @@ function mainDivison()
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
         $('#title_heading').css("font-size","40px");
 
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" id=\"product_image\"></div>");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" id=\"product_details\"></div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" id=\"product_image\"></div>");
+        //mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" id=\"product_details\"></div>");
     }
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
@@ -49,8 +49,8 @@ function mainDivison()
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
         $('#title_heading').css("font-size","25px");
 
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" id=\"product_image\"></div>");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" id=\"product_details\"></div>");
+        mainDiv.append("<div class=\"mdl-cell mdl-cell--6-col\" id=\"product_image\"></div>");
+        //mainDiv.append("<div class=\"mdl-cell mdl-cell--4-col\" id=\"product_details\"></div>");
     }
     //Mobile size
     else
@@ -58,7 +58,7 @@ function mainDivison()
         $('header').removeClass("mdl-layout--large-screen-only").addClass("mdl-layout--small-screen-only");
         $('#title_heading').css("font-size","15px");
         mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" id=\"product_image\"></div>");
-        mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" id=\"product_details\"></div>");
+       // mainDiv.append("<div class=\"mdl-cell mdl-cell--2-col\" id=\"product_details\"></div>");
     }
     develop_Product();
 }
@@ -76,12 +76,12 @@ function develop_Product() {
     var product_details = $("#product_details");
 
     createCard(product_image,"product_image");
-    createCard(product_details, "product_details");
+    //createCard(product_details, "product_details");
 
     createCard(product_image,"product_image");
-    createCard(product_details, "product_details");
+    //createCard(product_details, "product_details");
 
     createCard(product_image,"product_image");
-    createCard(product_details, "product_details");
+    //createCard(product_details, "product_details");
 }
 

@@ -1,32 +1,3 @@
-var $animation_elements = $('.animation-element');
-var $window = $(window);
-
-$window.on('scroll', check_if_in_view);
-
-$window.on('scroll resize', check_if_in_view);
-
-$window.trigger('scroll');
-
-function check_if_in_view() {
-  var window_height = $window.height();
-  var window_top_position = $window.scrollTop();
-  var window_bottom_position = (window_top_position + window_height);
-
-  $.each($animation_elements, function() {
-    var $element = $(this);
-    var element_height = $element.outerHeight();
-    var element_top_position = $element.offset().top;
-    var element_bottom_position = (element_top_position + element_height);
-
-    //check to see if this current container is within viewport
-    if ((element_bottom_position >= window_top_position) &&
-        (element_top_position <= window_bottom_position)) {
-      $element.addClass('in-view');
-    } else {
-      $element.removeClass('in-view');
-    }
-  });
-}
 
 var aboutUsText = "\"We are in this business since 1992\""
 $(document).ready(function()
@@ -74,6 +45,7 @@ function mainDivison()
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
         $('h1').css("font-size","40px");
         $('h2').css("font-size","35px");
+        $('p').css('font-size','25px');
         $('#about_us').css('margin-top','15%');
         $('.content').css('top','65px');
         $('.mdl-navigation__link').css('padding','2px 24px 0px 0px');
@@ -84,6 +56,7 @@ function mainDivison()
         $('header').removeClass("mdl-layout--small-screen-only").addClass("mdl-layout--large-screen-only");
         $('h1').css("font-size","25px");
         $('h2').css("font-size","20px");
+        $('p').css('font-size','20px');
         $('#about_us').css('margin-top','10%');
         $('.content').css('top','65px');
         $('.mdl-navigation__link').css('padding','2px 12px 0px 0px');
@@ -94,6 +67,7 @@ function mainDivison()
         $('header').removeClass("mdl-layout--large-screen-only").addClass("mdl-layout--small-screen-only");
         $('h1').css("font-size","15px");
         $('h2').css("font-size","12px");
+        $('p').css('font-size','8px');
         $('#about_us').css('margin-top','0%');
         $('.content').css('top','0px');
         $('.mdl-navigation__link').css('padding','2px 5px 0px 0px');
@@ -126,15 +100,15 @@ function product()
 {
     var busyCard = $('#1');
     busyCard.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
-    busyCard.append("<div style=\"width:50%\"><h2>Busy<div></div>");
+    busyCard.append("<div style=\"width:50%\"><h2>Busy</h2><div></div>");
 
     var reddix = $('#2');
-    reddix.append("<div style=\"width:50%\"><h2>Reddix<div></div>");
+    reddix.append("<div style=\"width:50%\"><h2>Reddix</h2><div></div>");
     reddix.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
 
     var rely = $('#3');
     rely.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
-    rely.append("<div style=\"width:50%\"><h2>Rely<div></div>");
+    rely.append("<div style=\"width:50%\"><h2>Rely</h2><div></div>");
 }
 
 function serviceDivison() {

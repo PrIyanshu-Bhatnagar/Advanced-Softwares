@@ -17,16 +17,15 @@ font-weight: bold;
     font-size: 14px;
 }
 h1{
-    color: white;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 p{
-    color: white;
+    color: #616161;
     font-size: 25px;
     margin: 20px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-        font-family: 'Merriweather', serif;
+    font-family: 'Merriweather', serif;
 }
 #header1{
     color: #424242;
@@ -71,11 +70,11 @@ p{
     font-size: 14px;
 }
 .gridSpacing{
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .top-margin{
     margin-top: 20px;
-    color: #212121;
+    color: #424242;
     font-family: 'Merriweather', serif;
     font-weight: bold;
 }
@@ -87,13 +86,13 @@ p{
 }
 
 #reddix-text{
-    color: #01579B;
+    color: #616161;
     font-size: 14px;
     font-family: 'Merriweather', serif;
 }
 
 #rely-text{
-    color: #01579B;
+    color: #616161;
     font-size: 14px;
     font-family: 'Merriweather', serif;
 }

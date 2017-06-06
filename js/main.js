@@ -35,8 +35,8 @@ function aboutDivison()
     aboutDiv.append(`<div class=\"mdl-cell mdl-cell--12-col\" align=\"center\" id=\"about_us_scroll\">
                         <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\" style=\"background: rgba(0,0,0,0.12); min-height: 175px\">
                             <div class=\"mdl-card__supporting-text top-margin reveal\">
-                                <h1 align=\"center\" id=\"aboutUs_header\">ABOUT US</h1>
-                                <p align=\"center\">`+ aboutUsText+ `</p>
+                                <h1 align=\"center\" id=\"aboutUs_header\" style=\"color: white\">ABOUT US</h1>
+                                <p align=\"center\" style=\"color: white\">`+ aboutUsText+ `</p>
                             </div>
                         </div>
                     </div>`);
@@ -154,12 +154,12 @@ function dependentOnSize()
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
     {
-        $('h1').css("font-size","25px");
+        $('h1').css("font-size","22px");
         $('#header1').css('font-size','20px');
         $('#header2').css('font-size','20px');
         $('#header3').css('font-size','20px');
         $('p').css('font-size','20px');
-        $('p').css('margin','15px 0px 0px 0px');
+        $('p').css('margin','15px 3px 0px 0px');
         $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
@@ -169,12 +169,12 @@ function dependentOnSize()
     //Mobile size
     else
     {
-        $('h1').css("font-size","15px");
+        $('h1').css("font-size","13px");
         $('#header1').css('font-size','12px');
         $('#header2').css('font-size','12px');
         $('#header3').css('font-size','12px');
-        $('p').css('font-size','8px');
-        $('p').css('margin','5px 0px 0px 0px');
+        $('p').css('font-size','7px');
+        $('p').css('margin','5px 3px 0px 0px');
         $('#about_us').css('margin-top','10%');
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');

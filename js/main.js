@@ -136,8 +136,6 @@ function serviceDivison() {
 
 function dependentOnSize()
 {
-    var headerHeight = $('header').height();
-    $('.content').css('top',headerHeight);
     if (/*$(window).height() >= 768 && */$(window).width() >= 830)
     {
         $('h1').css("font-size","40px");

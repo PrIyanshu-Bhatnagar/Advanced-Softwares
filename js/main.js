@@ -23,7 +23,7 @@ function aboutDivison()
     var aboutDiv = $("#about_us");
     aboutDiv.empty();
     //aboutDiv.append("<div class=\"mdl-cell mdl-cell--1-col\" ></div>");
-    aboutDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" align=\"center\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text animation-element\"><h1 align=\"center\">About Us</h1><p align=\"center\">"+aboutUsText+ "</p></div></div></div>")
+    aboutDiv.append("<div class=\"mdl-cell mdl-cell--12-col\" align=\"center\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12); min-height: 175px\"><div class=\"mdl-card__supporting-text animation-element\"><h1 align=\"center\">About Us</h1><p align=\"center\">"+aboutUsText+ "</p></div></div></div>")
     //aboutDiv.append("<div class=\"mdl-cell mdl-cell--1-col\" ></div>");
 
 }

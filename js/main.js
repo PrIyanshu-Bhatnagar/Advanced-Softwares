@@ -35,7 +35,7 @@ function mainDivison()
     mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text\" id=\"product_grid\" style=\"width:100%; padding:0px\"></div></div></div>");
 
     mainDiv = $("#product_grid");
-    mainDiv.append("<h1>Products</h1>");
+    mainDiv.append("<h1 align=\"center\">Products</h1>");
     mainDiv.append("<div class=\"mdl-grid\" id=\"products\")></div>");
     mainDiv = $('#products');
 
@@ -96,7 +96,6 @@ function dependentOnSize()
     if (/*$(window).height() >= 768 && */$(window).width() >= 830)
     {
         $('h1').css("font-size","40px");
-        $('h1').css('padding','px 0px 0px 20px');
         $('#header1').css('font-size','35px');
         $('#header2').css('font-size','35px');
         $('#header3').css('font-size','35px');
@@ -110,7 +109,6 @@ function dependentOnSize()
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
     {
         $('h1').css("font-size","25px");
-        $('h1').css('padding','0px 0px 0px 15px');
         $('#header1').css('font-size','20px');
         $('#header2').css('font-size','20px');
         $('#header3').css('font-size','20px');
@@ -123,12 +121,11 @@ function dependentOnSize()
     else
     {
         $('h1').css("font-size","15px");
-        $('h1').css('padding','0px 0px 0px 0px');
         $('#header1').css('font-size','12px');
         $('#header2').css('font-size','12px');
         $('#header3').css('font-size','12px');
         $('p').css('font-size','8px');
-        $('#about_us').css('margin-top','10%');
+        $('#about_us').css('margin-top','0%');
         $('.mdl-navigation__link').css('padding','2px 5px 0px 0px');
         $('.navigation-links').css('font-size','10px');
     }

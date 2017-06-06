@@ -168,7 +168,7 @@ function dependentOnSize()
         $('.demo-card-image__filename').css('font-size','12px');
         $('.product-card-height').css('height','180px');
 
-            $('.mdl-layout__content').css('top','67px');
+        $('.mdl-layout__content').css('top','65px');
 
     }
     //Mobile size
@@ -185,7 +185,7 @@ function dependentOnSize()
         $('.demo-card-image__filename').css('font-size','8px');
         $('.product-card-height').css('height','70px');
 
-            $('.mdl-layout__content').css('top','75px');
+        $('.mdl-layout__content').css('top','65px');
 
     }
 }

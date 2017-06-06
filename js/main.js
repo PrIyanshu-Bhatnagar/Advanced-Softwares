@@ -10,9 +10,9 @@ $(document).ready(function()
     cardWidthAdjustment();
     dependentOnSize();
 
-    sr.reveal('.reveal', { duration: 2500, origin: 'right', container: '#about_us_scroll', distance: '400px'});
-    sr.reveal('.reveal', { duration: 2500,origin: 'left', container: '#main_grid', distance: '400px'});
-    sr.reveal('.reveal', { duration: 2500,origin: 'bottom', container: '#services_grid', distance: '400px'});
+    sr.reveal('.reveal', { duration: 1500, origin: 'right', container: '#about_us_scroll', distance: '200px'});
+    sr.reveal('.reveal', { duration: 1500,origin: 'left', container: '#main_grid', distance: '200px'});
+    sr.reveal('.reveal', { duration: 1500,origin: 'bottom', container: '#services_grid', distance: '200px'});
 
 });
 
@@ -75,7 +75,7 @@ function createSection()
     var product_image = $("#1");
 
     product_image.append(`<div class="reveal" style=\"width: 50%; height:100%;\">
-                            <image width=\"100%\"class=\"product-card-height\" src=\"photos/busy.jpg\"> </image>
+                            <image width=\"100%\"class=\"product-card-height mdl-shadow--2dp\" src=\"photos/busy.jpg\"> </image>
                          </div>
                          <div class=\"reveal\" style=\"width: 45%; height:100%;\">
                             <h2 align=\"center\" class=\"header reveal\">BUSY</h2>
@@ -85,7 +85,7 @@ function createSection()
     product_image = $('#2');
 
     product_image.append(`<div class=\"reveal\" style=\"width: 50%; height:100%;\">
-                        <image width=\"100%\" class=\"product-card-height\" src=\"photos/radix.png\"> </image>
+                        <image width=\"100%\" class=\"product-card-height mdl-shadow--2dp\" src=\"photos/radix.png\"> </image>
                      </div>
                      <div class="reveal" style=\"width: 45%; height:100%;\">
                         <h2 align=\"center\" class=\"header reveal\">RADIX</h2>
@@ -95,7 +95,7 @@ function createSection()
     product_image = $('#3');
 
     product_image.append(`<div class=\"reveal\" style=\"width: 50%; height:100%;\">
-                        <image width=\"100%\" class=\"product-card-height\" src=\"photos/rely.png\"> </image>
+                        <image width=\"100%\" class=\"product-card-height mdl-shadow--2dp\" src=\"photos/rely.png\"> </image>
                      </div>
                      <div class="reveal" style=\"width: 45%; height:100%;\">
                         <h2 align=\"center\" class=\"header reveal\">RELY</h2>

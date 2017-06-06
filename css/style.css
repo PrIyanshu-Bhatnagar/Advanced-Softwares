@@ -27,21 +27,8 @@ p{
     padding: 0px 0px 0px 0px;
     font-family: 'Merriweather', serif;
 }
-#header1{
+.header{
     color: #424242;
-    margin: 0px 0px 0px 20px;
-    font-size: 35px;
-    font-family: 'Merriweather', serif;
-}
-#header2{
-    color: #424242;
-    margin: 0px 0px 0px 20px;
-    font-size: 35px;
-    font-family: 'Merriweather', serif;
-}
-#header3{
-    color: #424242;
-    margin: 0px 0px 0px 20px;
     font-size: 35px;
     font-family: 'Merriweather', serif;
 }
@@ -74,6 +61,7 @@ p{
 }
 .top-margin{
     margin-top: 20px;
+    padding-bottom: 20px;
     color: #424242;
     font-family: 'Merriweather', serif;
     font-weight: bold;
@@ -95,6 +83,9 @@ p{
     color: #616161;
     font-size: 14px;
     font-family: 'Merriweather', serif;
+}
+.product-card-height{
+height: 350px
 }
 .reveal{
 

@@ -260,7 +260,7 @@ window.setInterval(function(){
         para.fadeIn(3000);
         busyCount = 0;
     }
-}, 3000);
+}, 3500);
 
 window.setInterval(function(){
     var para = document.getElementById('busy-text');

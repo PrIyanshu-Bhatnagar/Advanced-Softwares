@@ -69,6 +69,19 @@ p{
 .top-margin{
     margin-top: 20px;
 }
-.animation-element{
-    margin-top: 17px
+
+#busy-text{
+
+    font-size: 14px;
+}
+
+#reddix-text{
+    font-size: 14px;
+}
+
+#rely-text{
+    font-size: 14px;
+}
+.reveal{
+
 }

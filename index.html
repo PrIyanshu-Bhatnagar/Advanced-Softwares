@@ -26,6 +26,13 @@
       </nav>
     </div>
   </header>
+   <style>
+
+      /* Ensure elements load hidden before ScrollReveal runs */
+      .sr .fooReveal { visibility: hidden; }
+    /* add perspective to your container */
+      .fooContainer { perspective: 800px; }
+    </style>
 </head>
 <body style="background: url('photos/background_image2.png') center / cover;">
   <main class="mdl-layout__content content">
@@ -91,5 +98,6 @@
             </div>
           </footer>
   </main>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>

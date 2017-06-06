@@ -93,6 +93,7 @@ function serviceDivison() {
 
 function dependentOnSize()
 {
+
     if (/*$(window).height() >= 768 && */$(window).width() >= 830)
     {
         $('h1').css("font-size","40px");

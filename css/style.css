@@ -23,12 +23,21 @@ p{
     margin: 20px 0px 0px 0px;
     padding: 0px 0px 0px 20px;
 }
+#header1{
+    color: white;
+    margin: 0px 0px 0px 20px;
+    font-size: 35px;
+}
 #header2{
     color: white;
     margin: 0px 0px 0px 20px;
     font-size: 35px;
 }
-
+#header3{
+    color: white;
+    margin: 0px 0px 0px 20px;
+    font-size: 35px;
+}
 .content
 {
     position:absolute;
@@ -50,4 +59,7 @@ p{
     left:0;
     z-index:1;
     width: 100%
+}
+.navigation-links{
+    font-size: 14px;
 }

@@ -70,7 +70,7 @@ function product()
 {
     var busyCard = $('#1');
     busyCard.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
-    busyCard.append("<div style=\"width:50%\"><h2 id=\"header2\">Busy</h2></div>");
+    busyCard.append("<div style=\"width:50%\"><h2 id=\"header1\">Busy</h2></div>");
 
     var reddix = $('#2');
     reddix.append("<div style=\"width:50%\"><h2 id=\"header2\">Reddix</h2></div>");
@@ -78,7 +78,7 @@ function product()
 
     var rely = $('#3');
     rely.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
-    rely.append("<div style=\"width:50%\"><h2 id=\"header2\">Rely</h2></div>");
+    rely.append("<div style=\"width:50%\"><h2 id=\"header3\">Rely</h2></div>");
 }
 
 function serviceDivison() {
@@ -97,30 +97,39 @@ function dependentOnSize()
     {
         $('h1').css("font-size","40px");
         $('h1').css('padding','px 0px 0px 20px');
+        $('#header1').css('font-size','35px');
         $('#header2').css('font-size','35px');
+        $('#header3').css('font-size','35px');
         $('.content').css('top','65px');
         $('p').css('font-size','25px');
         $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 24px 0px 0px');
+        $('.navigation-links').css('font-size','14px');
     }
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
     {
         $('h1').css("font-size","25px");
         $('h1').css('padding','0px 0px 0px 15px');
+        $('#header1').css('font-size','20px');
         $('#header2').css('font-size','20px');
+        $('#header3').css('font-size','20px');
         $('p').css('font-size','20px');
         $('#about_us').css('margin-top','10%');
         $('.mdl-navigation__link').css('padding','2px 12px 0px 0px');
+        $('.navigation-links').css('font-size','12px');
     }
     //Mobile size
     else
     {
         $('h1').css("font-size","15px");
         $('h1').css('padding','0px 0px 0px 0px');
+        $('#header1').css('font-size','12px');
         $('#header2').css('font-size','12px');
+        $('#header3').css('font-size','12px');
         $('p').css('font-size','8px');
         $('#about_us').css('margin-top','10%');
         $('.mdl-navigation__link').css('padding','2px 5px 0px 0px');
+        $('.navigation-links').css('font-size','10px');
     }
 }

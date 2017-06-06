@@ -35,7 +35,7 @@ function mainDivison()
     mainDiv.append("<div class=\"mdl-cell mdl-cell--12-col\"><div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\"><div class=\"mdl-card__supporting-text\" id=\"product_grid\" style=\"width:100%; padding:0px\"></div></div></div>");
 
     mainDiv = $("#product_grid");
-    mainDiv.append("<h1 align=\"center\">Products</h1>");
+    mainDiv.append("<h1 align=\"center\" class=\"top-margin\">Products</h1>");
     mainDiv.append("<div class=\"mdl-grid\" id=\"products\")></div>");
     mainDiv = $('#products');
 
@@ -88,7 +88,7 @@ function serviceDivison() {
 
     var serText = $('#service_text');
     serText.prepend("<p align=\"center\">"+aboutUsText+"</p>");
-    serText.prepend("<h1 align=\"center\">Services</h1>");
+    serText.prepend("<h1 align=\"center\" class=\"top-margin\">Services</h1>");
 }
 
 function dependentOnSize()

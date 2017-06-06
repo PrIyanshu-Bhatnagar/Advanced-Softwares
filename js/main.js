@@ -1,4 +1,4 @@
-    window.sr = ScrollReveal({ reset: true });
+window.sr = ScrollReveal({ reset: true });
 
 var aboutUsText = "\"We are in this business since 1992\""
 
@@ -10,9 +10,9 @@ $(document).ready(function()
     cardWidthAdjustment();
     dependentOnSize();
 
-    sr.reveal('.reveal', { duration: 1500, origin: 'right', container: '#about_us_scroll', distance: '200px'});
-    sr.reveal('.reveal', { duration: 1500,origin: 'left', container: '#main_grid', distance: '200px'});
-    sr.reveal('.reveal', { duration: 1500,origin: 'bottom', container: '#services_grid', distance: '200px'});
+    sr.reveal('.reveal', { duration: 2000, origin: 'right', container: '#about_us_scroll', distance: '400px'});
+    sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#main_grid', distance: '400px'});
+    sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#services_grid', distance: '400px'});
 
 });
 
@@ -23,8 +23,10 @@ $( window ).resize(function()
     mainDivison();
     cardWidthAdjustment();
     dependentOnSize();
-    //sr.reveal('.reveal', { duration: 500,origin: 'bottom', container: '#about_us_scroll'});
-    //sr.reveal('.reveal', { duration: 500,origin: 'bottom', container: '#services_grid'});
+
+    sr.reveal('.reveal', { duration: 2000, origin: 'bottom', container: '#about_us_scroll', distance: '200px'});
+    sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#main_grid', distance: '200px'});
+    sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#services_grid', distance: '200px'});
 
 });
 
@@ -136,6 +138,7 @@ function serviceDivison() {
 
 function dependentOnSize()
 {
+    $('.mdl-layout__content').css('top','65px');
     if (/*$(window).height() >= 768 && */$(window).width() >= 830)
     {
         $('h1').css("font-size","40px");

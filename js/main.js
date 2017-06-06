@@ -114,7 +114,7 @@ function dependentOnSize()
         $('#header2').css('font-size','20px');
         $('#header3').css('font-size','20px');
         $('p').css('font-size','20px');
-        $('#about_us').css('margin-top','10%');
+        $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
         $('.mdl-card').css('min-height','150px');
@@ -128,7 +128,7 @@ function dependentOnSize()
         $('#header2').css('font-size','12px');
         $('#header3').css('font-size','12px');
         $('p').css('font-size','8px');
-        $('#about_us').css('margin-top','0%');
+        $('#about_us').css('margin-top','10%');
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');
         $('.mdl-card').css('min-height','100px');

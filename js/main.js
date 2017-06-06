@@ -102,7 +102,7 @@ function dependentOnSize()
         $('.content').css('top','65px');
         $('p').css('font-size','25px');
         $('#about_us').css('margin-top','15%');
-        $('.mdl-navigation__link').css('padding','2px 24px 0px 0px');
+        $('.mdl-navigation__link').css('padding','2px 20px 0px 0px');
         $('.navigation-links').css('font-size','14px');
         $('.mdl-card').css('min-height','175px');
     }
@@ -115,7 +115,7 @@ function dependentOnSize()
         $('#header3').css('font-size','20px');
         $('p').css('font-size','20px');
         $('#about_us').css('margin-top','10%');
-        $('.mdl-navigation__link').css('padding','2px 12px 0px 0px');
+        $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
         $('.mdl-card').css('min-height','150px');
 
@@ -129,7 +129,7 @@ function dependentOnSize()
         $('#header3').css('font-size','12px');
         $('p').css('font-size','8px');
         $('#about_us').css('margin-top','0%');
-        $('.mdl-navigation__link').css('padding','2px 5px 0px 0px');
+        $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');
         $('.mdl-card').css('min-height','100px');
     }

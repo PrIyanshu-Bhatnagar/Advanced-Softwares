@@ -37,7 +37,7 @@ function aboutDivison()
     aboutDiv.append(`<div class=\"mdl-cell mdl-cell--12-col\" align=\"center\" id=\"about_us_scroll\">
                         <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\" style=\"background: rgba(0,0,0,0.12); min-height: 175px\">
                             <div class=\"mdl-card__supporting-text top-margin reveal\">
-                                <h1 align=\"center\" id=\"aboutUs_header\" style=\"color: white\">ABOUT US</h1>
+                                <h1 align=\"center\" id=\"aboutUs_header\" style=\"color: white\">ADVANCED SOFTWARES</h1>
                                 <p align=\"center\" style=\"color: white\">`+ aboutUsText+ `</p>
                             </div>
                         </div>
@@ -140,9 +140,8 @@ function dependentOnSize()
 {
     if (/*$(window).height() >= 768 && */$(window).width() >= 830)
     {
-        $('h1').css("font-size","40px");
+        $('h1').css("font-size","50px");
         $('.header').css('font-size','35px');
-        $('.content').css('top','65px');
         $('p').css('font-size','25px');
         $('p').css('margin','20px 0px 0px 0px');
         $('#about_us').css('margin-top','15%');

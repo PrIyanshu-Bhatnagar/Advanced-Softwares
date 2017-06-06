@@ -138,7 +138,6 @@ function serviceDivison() {
 
 function dependentOnSize()
 {
-    $('.mdl-layout__content').css('top','65px');
     if (/*$(window).height() >= 768 && */$(window).width() >= 830)
     {
         $('h1').css("font-size","40px");
@@ -152,6 +151,8 @@ function dependentOnSize()
         $('.mdl-card').css('min-height','175px');
         $('.demo-card-image__filename').css('font-size','14px');
         $('.product-card-height').css('height','325px');
+
+        $('.mdl-layout__content').css('top','65px');
     }
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
@@ -166,6 +167,9 @@ function dependentOnSize()
         $('.mdl-card').css('min-height','150px');
         $('.demo-card-image__filename').css('font-size','12px');
         $('.product-card-height').css('height','180px');
+
+            $('.mdl-layout__content').css('top','67px');
+
     }
     //Mobile size
     else
@@ -180,6 +184,9 @@ function dependentOnSize()
         $('.mdl-card').css('min-height','100px');
         $('.demo-card-image__filename').css('font-size','8px');
         $('.product-card-height').css('height','70px');
+
+            $('.mdl-layout__content').css('top','75px');
+
     }
 }
 

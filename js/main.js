@@ -69,15 +69,15 @@ function develop_Product() {
 function product()
 {
     var busyCard = $('#1');
-    busyCard.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
+    busyCard.append("<div class=\"demo-card-image mdl-card mdl-shadow--2dp\" style=\"width: 50%; height: 100%\"> <div class=\"mdl-card__title mdl-card--expand\"></div><div class=\"mdl-card__actions\"><span class=\"demo-card-image__filename\">BUSY</span></div></div>");
     busyCard.append("<div style=\"width:50%\"><h2 id=\"header1\">Busy</h2></div>");
 
     var reddix = $('#2');
     reddix.append("<div style=\"width:50%\"><h2 id=\"header2\">Reddix</h2></div>");
-    reddix.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
+    reddix.append("<div class=\"demo-card-image mdl-card mdl-shadow--2dp\" style=\"width: 50%; height: 100%\"> <div class=\"mdl-card__title mdl-card--expand\"></div><div class=\"mdl-card__actions\"><span class=\"demo-card-image__filename\">REDDIX</span></div></div>");
 
     var rely = $('#3');
-    rely.append("<image src=\"http://via.placeholder.com/350x150\" style=\"width: 50%\; height: 100%;\"></image>");
+    rely.append("<div class=\"demo-card-image mdl-card mdl-shadow--2dp\" style=\"width: 50%; height: 100%\"> <div class=\"mdl-card__title mdl-card--expand\"></div><div class=\"mdl-card__actions\"><span class=\"demo-card-image__filename\">RELY</span></div></div>");
     rely.append("<div style=\"width:50%\"><h2 id=\"header3\">Rely</h2></div>");
 }
 

@@ -5,6 +5,10 @@
 #about_us{
     margin-top:15%;
 }
+#aboutUs_header{
+font-family: 'Merriweather', serif;
+font-weight: bold;
+}
 #footer_logo{
     font-family: 'Kaushan Script', cursive;
     color: white;
@@ -22,21 +26,25 @@ p{
     font-size: 25px;
     margin: 20px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+        font-family: 'Merriweather', serif;
 }
 #header1{
-    color: white;
+    color: #424242;
     margin: 0px 0px 0px 20px;
     font-size: 35px;
+    font-family: 'Merriweather', serif;
 }
 #header2{
-    color: white;
+    color: #424242;
     margin: 0px 0px 0px 20px;
     font-size: 35px;
+    font-family: 'Merriweather', serif;
 }
 #header3{
-    color: white;
+    color: #424242;
     margin: 0px 0px 0px 20px;
     font-size: 35px;
+    font-family: 'Merriweather', serif;
 }
 .content
 {
@@ -68,19 +76,27 @@ p{
 }
 .top-margin{
     margin-top: 20px;
+    color: #212121;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
 }
 
 #busy-text{
-
+    color: #616161;
     font-size: 14px;
+    font-family: 'Inconsolata', monospace;
 }
 
 #reddix-text{
+    color: #01579B;
     font-size: 14px;
+    font-family: 'Merriweather', serif;
 }
 
 #rely-text{
+    color: #01579B;
     font-size: 14px;
+    font-family: 'Merriweather', serif;
 }
 .reveal{
 

@@ -9,9 +9,10 @@ $(document).ready(function()
     mainDivison();
     cardWidthAdjustment();
     dependentOnSize();
-    sr.reveal('.reveal', { duration: 2500, origin: 'right', container: '#about_us_scroll', distance: '200px'});
-    sr.reveal('.reveal', { duration: 2500,origin: 'right', container: '#main_grid', distance: '200px'});
-    sr.reveal('.reveal', { duration: 2500,origin: 'left', container: '#services_grid'});
+
+    sr.reveal('.reveal', { duration: 2500, origin: 'right', container: '#about_us_scroll', distance: '400px'});
+    sr.reveal('.reveal', { duration: 2500,origin: 'left', container: '#main_grid', distance: '400px'});
+    sr.reveal('.reveal', { duration: 2500,origin: 'bottom', container: '#services_grid', distance: '400px'});
 
 });
 
@@ -34,8 +35,8 @@ function aboutDivison()
     aboutDiv.append(`<div class=\"mdl-cell mdl-cell--12-col\" align=\"center\" id=\"about_us_scroll\">
                         <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\" style=\"background: rgba(0,0,0,0.12); min-height: 175px\">
                             <div class=\"mdl-card__supporting-text top-margin reveal\">
-                                <h1 align=\"center\" class=\"\">About Us</h1>
-                                <p align=\"center\" class=\"\">`+ aboutUsText+ `</p>
+                                <h1 align=\"center\" id=\"aboutUs_header\">ABOUT US</h1>
+                                <p align=\"center\">`+ aboutUsText+ `</p>
                             </div>
                         </div>
                     </div>`);
@@ -46,9 +47,9 @@ function mainDivison()
     var mainDiv = $("#main_grid");
     mainDiv.empty();
     mainDiv.append(`<div class=\"mdl-cell mdl-cell--12-col reveal\" >
-                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\" style=\"background: rgba(0,0,0,0.12)\">
+                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\">
                             <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px\">
-                                <h1 align=\"center\" class=\"top-margin reveal\">Products</h1>
+                                <h1 align=\"center\" class=\"top-margin reveal\">PRODUCTS</h1>
                                 <div class=\"mdl-grid reveal\")>
                                     <div class=\"mdl-cell mdl-cell--12-col reveal\" id=\"product_image\" style(\"width: calc(100% - 16px);\">
 
@@ -61,13 +62,45 @@ function mainDivison()
 }
 function createCard(object,id){
     object.append(`<div class=\"mdl-cell mdl-cell--12-col animation-element\">
-                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"background: rgba(0,0,0,0.12)\">
+                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp\">
                             <div class=\"mdl-card__supporting-text\" style=\"width: 100%\">
                                 <div class=\"mdl-grid\" id=\"` +id + `\">
                                 </div>
                             </div>
                         </div>
                    </div>`);
+}
+function createSection()
+{
+    var product_image = $("#1");
+
+    product_image.append(`<div class="reveal" style=\"width: 50%; height:100%;\">
+                            <image width=\"100%\" height=\"100%\" src=\"\"> </image>
+                         </div>
+                         <div class=\"reveal\" style=\"width: 50%; height:100%;\">
+                            <h2 id=\"header1\" align=\"center\" class=\"reveal\">BUSY</h2>
+                            <p id=\"busy-text\" align=\"center\" class=\"reveal\"></p>
+                         </div>`);
+
+    product_image = $('#2');
+
+    product_image.append(`<div class=\"reveal\" style=\"width: 50%; height:100%;\">
+                        <image width=\"100%\" height=\"100%\" src=\"\"> </image>
+                     </div>
+                     <div class="reveal" style=\"width: 50%; height:100%;\">
+                        <h2 id=\"header2\" align=\"center\" class=\"reveal\">REDX</h2>
+                        <p id=\"reddix-text\" align=\"center\" class=\"reveal\"></p>
+                     </div>`);
+
+    product_image = $('#3');
+
+    product_image.append(`<div class=\"reveal\" style=\"width: 50%; height:100%;\">
+                        <image width=\"100%\" height=\"100%\" src=\"\"> </image>
+                     </div>
+                     <div class="reveal" style=\"width: 50%; height:100%;\">
+                        <h2 id=\"header3\" align=\"center\" class=\"reveal\">RELY</h2>
+                        <p id=\"rely-text\" align=\"center\" class=\"reveal\"></p>
+                     </div>`);
 }
 
 function cardWidthAdjustment() {
@@ -76,64 +109,25 @@ function cardWidthAdjustment() {
 }
 
 function develop_Product() {
-    var product_image = $("#product_image");
 
-    createCard(product_image,"1"); //Id 1 is Busy
+   var product_image = $("#product_image");
 
-    createCard(product_image,"2");//Id 2 is Reddix
+   createCard(product_image,"1"); //Id 1 is Busy
 
-    createCard(product_image,"3");//Id 3 is Rely
+   createCard(product_image,"2");//Id 2 is Reddix
 
-    product();
+   createCard(product_image,"3");//Id 3 is Rely
 
-}
-
-function product()
-{
-    var busyCard = $('#1');
-    busyCard.append(`<div class=\"demo-card-image mdl-card mdl-shadow--2dp reveal\" style=\"width: 50%; height: 100%\">
-                        <div class=\"mdl-card__title mdl-card--expand reveal\"></div>
-                        <div class=\"mdl-card__actions reveal\">
-                            <span class=\"demo-card-image__filename reveal\">BUSY</span>
-                        </div>
-                    </div>`);
-    busyCard.append(`<div style=\"width:50%\">
-                        <h2 id=\"header1\" align=\"center\" class=\"reveal\">Busy</h2>
-                        <p id="busy-text" align=\"center\" class=\"reveal\"> </p>
-                    </div>`);
-
-    var reddix = $('#2');
-    reddix.append(`<div style=\"width:50%\" class=\"reveal\">
-                        <h2 id=\"header2\" align=\"center\" class=\"reveal\">Reddix</h2>
-                        <p id="reddix-text" align=\"center\" class=\"reveal\" > </p>
-                    </div>`);
-    reddix.append(`<div class=\"demo-card-image mdl-card mdl-shadow--2dp\" style=\"width: 45%; height: 100%;\">
-                        <div class=\"mdl-card__title mdl-card--expand\"></div>
-                        <div class=\"mdl-card__actions\">
-                            <span class=\"demo-card-image__filename\">REDDIX</span>
-                        </div>
-                   </div>`);
-
-    var rely = $('#3');
-    rely.append(`<div class=\"demo-card-image mdl-card mdl-shadow--2dp\" style=\"width: 50%; height: 100%\">
-                    <div class=\"mdl-card__title mdl-card--expand\"></div>
-                    <div class=\"mdl-card__actions\">
-                        <span class=\"demo-card-image__filename\">RELY</span>
-                    </div>
-                </div>`);
-    rely.append(`<div style=\"width:50%\">
-                    <h2 id=\"header3\" align=\"center\">Rely</h2>
-                    <p id="rely-text" align=\"center\"> </p>
-                </div>`);
+    createSection();
 }
 
 function serviceDivison() {
     var serDiv = $('#services_grid');
     serDiv.empty();
     serDiv.append(`<div class=\"mdl-cell mdl-cell--12-col reveal\" id=\"service_grid_scroll\">
-                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\" style=\"background: rgba(0,0,0,0.12)\">
+                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\" >
                             <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px\">
-                                <h1 align=\"center\" class=\"top-margin reveal\">Services</h1>
+                                <h1 align=\"center\" class=\"top-margin reveal\">SERVICES</h1>
                                 <p align=\"center\" class=\"reveal\">`+aboutUsText+`</p>
                             </div>
                         </div>
@@ -197,73 +191,73 @@ window.setInterval(function(){
     if(busyCount == 0){
         para.fadeOut(0);
         para.text("\"Financial Accounting (Multi-Currency)\"");
-        para.fadeIn(500);
+        para.fadeIn(3000);
         busyCount += 1;
     }
     else if (busyCount == 1) {
         para.fadeOut(0);
         para.text("\"Inventory Management (Multi-location)\"");
-        para.fadeIn(500);
+        para.fadeIn(3000);
         busyCount += 1;
     }
     else if (busyCount == 2) {
         para.fadeOut(0);
         para.text("\"Production / Bill of Material\"");
-        para.fadeIn(500);
+        para.fadeIn(3000);
         busyCount += 1;
     }
     else if (busyCount == 3) {
         para.fadeOut(0);
         para.text("\"Sales / Purchase Quotations\"");
-        para.fadeIn(500);
+        para.fadeIn(3000);
         busyCount += 1;
     }
     else if (busyCount == 4) {
         para.fadeOut(0);
         para.text("\"Sales / Purchase Order Processing\"");
-        para.fadeIn(500);
+        para.fadeIn(3000);
         busyCount += 1;
     }
     else if (busyCount == 5) {
         para.fadeOut(0);
         para.text("\"Fully User-configurable Invoicing\"");
-        para.fadeIn(500);
+        para.fadeIn(3000);
         busyCount += 1;
     }
     else if (busyCount == 6) {
         para.fadeOut(0);
         para.text("\"User-configurable Documents / Letters\"");
-        para.fadeIn(500);
+        para.fadeIn(3000);
         busyCount += 1;
     }
     else if (busyCount == 7) {
         para.fadeOut(0);
         para.text("\"User-configurable Columns in Reports\"");
-        para.fadeIn(500);
+        para.fadeIn(3000);
         busyCount += 1;
     }
     else if (busyCount == 8) {
         para.fadeOut(0);
         para.text("\"CST / VAT Reports (State-specific)\"");
-        para.fadeIn(500);
+        para.fadeIn(3000);
         busyCount += 1;
     }
     else if (busyCount == 9) {
         para.fadeOut(0);
         para.text("\"Service Tax & TDS\"");
-        para.fadeIn(500);
+        para.fadeIn(3000);
         busyCount += 1;
     }
     else if (busyCount == 10) {
         para.fadeOut(0);
         para.text("\"Mfg / Trading Excise Registers\"");
-        para.fadeIn(500);
+        para.fadeIn(3000);
         busyCount += 1;
     }
     else if (busyCount == 11) {
         para.fadeOut(0);
         para.text("\"MIS Reports & Analysis \"");
-        para.fadeIn(500);
+        para.fadeIn(3000);
         busyCount = 0;
     }
 }, 3000);

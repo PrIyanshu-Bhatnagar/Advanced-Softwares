@@ -107,6 +107,7 @@ function dependentOnSize()
         $('.mdl-navigation__link').css('padding','2px 20px 0px 0px');
         $('.navigation-links').css('font-size','14px');
         $('.mdl-card').css('min-height','175px');
+        $('.demo-card-image__filename').css('font-size','14px');
     }
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
@@ -121,7 +122,7 @@ function dependentOnSize()
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
         $('.mdl-card').css('min-height','150px');
-
+        $('.demo-card-image__filename').css('font-size','12px');
     }
     //Mobile size
     else
@@ -136,5 +137,6 @@ function dependentOnSize()
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');
         $('.mdl-card').css('min-height','100px');
+        $('.demo-card-image__filename').css('font-size','8px');
     }
 }

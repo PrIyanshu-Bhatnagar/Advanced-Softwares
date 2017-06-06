@@ -35,6 +35,7 @@ p{
 .content
 {
     position:absolute;
+    top:65px;
     left:0px;
     right:0px;
     bottom:0px;

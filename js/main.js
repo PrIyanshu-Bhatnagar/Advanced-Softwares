@@ -1,7 +1,8 @@
 window.sr = ScrollReveal({ reset: true });
 
 var aboutUsText = "\"We are in this business since 1992\""
-
+var servicesText= "";
+var busyText = `BUSY is an integrated business accounting software for Micro, Small and Medium businesses.  With over 1,50,000 installations (over 6 Lac Users) worldwide, BUSY is one of the leading accounting softwares in India.\n\tThe salient features of BUSY are:`;
 $(document).ready(function()
 {
     aboutDivison();
@@ -9,7 +10,6 @@ $(document).ready(function()
     mainDivison();
     cardWidthAdjustment();
     dependentOnSize();
-
     sr.reveal('.reveal', { duration: 2000, origin: 'right', container: '#about_us_scroll', distance: '400px'});
     sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#main_grid', distance: '400px'});
     sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#services_grid', distance: '400px'});
@@ -81,6 +81,7 @@ function createSection()
                          </div>
                          <div class=\"reveal\" style=\"width: 45%; height:100%;\">
                             <h2 align=\"center\" class=\"header reveal\">BUSY</h2>
+                            <p id=\"busy-para\" align=\"left\" class=\"reveal\">`+busyText+`</p>
                             <p id=\"busy-text\" align=\"center\" class=\"reveal\"></p>
                          </div>`);
 
@@ -142,8 +143,10 @@ function dependentOnSize()
     {
         $('h1').css("font-size","50px");
         $('.header').css('font-size','35px');
-        $('p').css('font-size','25px');
-        $('p').css('margin','20px 0px 0px 0px');
+        $('#busy-text').css('font-size','25px');
+        $('p').css('margin','10px 0px 0px 0px');
+        $('#busy-para').css('font-size','18px');
+        $('#busy-para').css('margin-left','10px');
         $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 20px 0px 0px');
         $('.navigation-links').css('font-size','14px');
@@ -157,8 +160,10 @@ function dependentOnSize()
     {
         $('h1').css("font-size","22px");
         $('.header').css('font-size','20px');
-        $('p').css('font-size','20px');
-        $('p').css('margin','15px 3px 0px 0px');
+        $('#busy-text').css('font-size','20px');
+        $('#busy-para').css('font-size','15px');
+        $('#busy-para').css('margin-left','8px');
+        $('p').css('margin','8px 0px 0px 0px');
         $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
@@ -166,14 +171,17 @@ function dependentOnSize()
         $('.demo-card-image__filename').css('font-size','12px');
         $('#card').css('height','170px');
         $('.product-card-height').css('height',$('#card').height());
+        $('#busy-para').css('font-size','15px');
     }
     //Mobile size
     else
     {
         $('h1').css("font-size","13px");
         $('.header').css('font-size','12px');
-        $('p').css('font-size','10px');
-        $('p').css('margin','5px 3px 0px 0px');
+        $('#busy-text').css('font-size','10px');
+        $('#busy-para').css('font-size','10px');
+        $('#busy-para').css('margin-left','5px');
+        $('p').css('margin','2px 0px 0px 0px');
         $('#about_us').css('margin-top','10%');
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');
@@ -184,6 +192,19 @@ function dependentOnSize()
     }
 }
 
+$("#about_us_link").on('click',function() {
+    $('html, body').animate({scrollTop: $("#navigateToAboutUs").offset().top}, 2000);
+});
+$("#main_grid_link").click(function() {
+    $('html, body').animate({scrollTop: $("#main_grid").offset().top}, 2000);
+});
+$("#service_grid_link").click(function() {
+    $('html, body').animate({scrollTop: $("#services_grid").offset().top}, 2000);
+});
+$("#contact_us_link").click(function() {
+    $('html, body').animate({scrollTop: $("#navigateToContactUs").offset().top}, 2000);
+});
+
 var busyCount = 0, reddixCount = 0, relyCount = 0;
 
 window.setInterval(function(){
@@ -191,76 +212,76 @@ window.setInterval(function(){
     if(busyCount == 0){
         para.fadeOut(0);
         para.text("\"Financial Accounting (Multi-Currency)\"");
-        para.fadeIn(3000);
+        para.fadeIn(1500);
         busyCount += 1;
     }
     else if (busyCount == 1) {
         para.fadeOut(0);
         para.text("\"Inventory Management (Multi-location)\"");
-        para.fadeIn(3000);
+        para.fadeIn(1500);
         busyCount += 1;
     }
     else if (busyCount == 2) {
         para.fadeOut(0);
         para.text("\"Production / Bill of Material\"");
-        para.fadeIn(3000);
+        para.fadeIn(1500);
         busyCount += 1;
     }
     else if (busyCount == 3) {
         para.fadeOut(0);
         para.text("\"Sales / Purchase Quotations\"");
-        para.fadeIn(3000);
+        para.fadeIn(1500);
         busyCount += 1;
     }
     else if (busyCount == 4) {
         para.fadeOut(0);
         para.text("\"Sales / Purchase Order Processing\"");
-        para.fadeIn(3000);
+        para.fadeIn(1500);
         busyCount += 1;
     }
     else if (busyCount == 5) {
         para.fadeOut(0);
         para.text("\"Fully User-configurable Invoicing\"");
-        para.fadeIn(3000);
+        para.fadeIn(1500);
         busyCount += 1;
     }
     else if (busyCount == 6) {
         para.fadeOut(0);
         para.text("\"User-configurable Documents / Letters\"");
-        para.fadeIn(3000);
+        para.fadeIn(1500);
         busyCount += 1;
     }
     else if (busyCount == 7) {
         para.fadeOut(0);
         para.text("\"User-configurable Columns in Reports\"");
-        para.fadeIn(3000);
+        para.fadeIn(1500);
         busyCount += 1;
     }
     else if (busyCount == 8) {
         para.fadeOut(0);
         para.text("\"CST / VAT Reports (State-specific)\"");
-        para.fadeIn(3000);
+        para.fadeIn(1500);
         busyCount += 1;
     }
     else if (busyCount == 9) {
         para.fadeOut(0);
         para.text("\"Service Tax & TDS\"");
-        para.fadeIn(3000);
+        para.fadeIn(1500);
         busyCount += 1;
     }
     else if (busyCount == 10) {
         para.fadeOut(0);
         para.text("\"Mfg / Trading Excise Registers\"");
-        para.fadeIn(3000);
+        para.fadeIn(1500);
         busyCount += 1;
     }
     else if (busyCount == 11) {
         para.fadeOut(0);
         para.text("\"MIS Reports & Analysis \"");
-        para.fadeIn(3000);
+        para.fadeIn(1500);
         busyCount = 0;
     }
-}, 3500);
+}, 2000);
 
 window.setInterval(function(){
     var para = document.getElementById('busy-text');

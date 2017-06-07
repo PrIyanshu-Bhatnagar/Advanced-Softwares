@@ -41,7 +41,7 @@ function aboutDivison()
                         <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\" style=\"background: rgba(0,0,0,0.12); min-height: 175px\">
                             <div class=\"mdl-card__supporting-text top-margin reveal\">
                                 <h1 align=\"center\" id=\"aboutUs_header\" style=\"color: white\">ADVANCED SOFTWARES</h1>
-                                <p align=\"center\" style=\"color: white\">`+ aboutUsText+ `</p>
+                                <p align=\"center\" style=\"color: white\" class=\"para\">`+ aboutUsText+ `</p>
                             </div>
                         </div>
                     </div>`);
@@ -135,7 +135,7 @@ function serviceDivison() {
                         <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\" >
                             <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px\">
                                 <h1 align=\"center\" class=\"top-margin reveal\">SERVICES</h1>
-                                <p align=\"center\" class=\"reveal\">`+aboutUsText+`</p>
+                                <p align=\"center\" class=\"para reveal\">`+aboutUsText+`</p>
                             </div>
                         </div>
                   </div>`);

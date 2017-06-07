@@ -146,7 +146,7 @@ function dependentOnSize()
         $('#busy-text').css('font-size','25px');
         $('p').css('margin','10px 0px 0px 0px');
         $('#busy-para').css('font-size','18px');
-        $('#busy-para').css('margin-left','10px');
+        $('#busy-para').css('margin','2px 0px 0px 10px');
         $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 20px 0px 0px');
         $('.navigation-links').css('font-size','14px');
@@ -161,8 +161,8 @@ function dependentOnSize()
         $('h1').css("font-size","22px");
         $('.header').css('font-size','20px');
         $('#busy-text').css('font-size','20px');
-        $('#busy-para').css('font-size','15px');
-        $('#busy-para').css('margin-left','8px');
+        $('#busy-para').css('font-size','10px');
+        $('#busy-para').css('margin','0px 0px 0px 5px');
         $('p').css('margin','8px 0px 0px 0px');
         $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');

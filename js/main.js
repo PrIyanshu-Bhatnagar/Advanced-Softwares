@@ -190,7 +190,7 @@ function dependentOnSize()
         $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
-        $('#card').css('min-height','150px');
+        $('#card').css('min-height','200px');
         $('.demo-card-image__filename').css('font-size','12px');
         $('#card').css('height','230px');
         $('.product-card-height').css('height',$('#card').height());
@@ -210,7 +210,7 @@ function dependentOnSize()
         $('#about_us').css('margin-top','10%');
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');
-        $('#card').css('min-height','100px');
+        $('#card').css('min-height','150px');
         $('.demo-card-image__filename').css('font-size','8px');
         $('#card').css('height','80px');
         $('.product-card-height').css('height',$('#card').height());

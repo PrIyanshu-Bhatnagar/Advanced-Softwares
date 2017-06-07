@@ -82,7 +82,7 @@ function createSection()
                          <div class=\"reveal\" style=\"width: 45%; height:100%;\">
                             <h2 align=\"center\" class=\"header reveal\">BUSY</h2>
                             <p id=\"busy-para\" align=\"left\" class=\"reveal\">`+busyText+`</p>
-                            <p id=\"busy-text\" align=\"center\" class=\"reveal\"></p>
+                            <p id=\"busy-text\" align=\"right\" class=\"reveal\"></p>
                          </div>`);
 
     product_image = $('#2');

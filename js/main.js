@@ -51,15 +51,11 @@ function mainDivison()
 {
     var mainDiv = $("#main_grid");
     mainDiv.empty();
-    mainDiv.append(`<div class=\"mdl-cell mdl-cell--12-col reveal\" >
-                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\">
-                            <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px\">
-                                <h1 align=\"center\" class=\"top-margin reveal\">PRODUCTS</h1>
-                                <div class=\"mdl-grid reveal\")>
-                                    <div class=\"mdl-cell mdl-cell--12-col reveal\" id=\"product_image\" style(\"width: calc(100% - 16px);\">
+    mainDiv.append(`<div class=\"reveal\">
+                        <h1 align=\"center\" class=\"top-margin reveal\">PRODUCTS</h1>
+                        <div class=\"mdl-grid reveal\")>
+                            <div class=\"mdl-cell mdl-cell--12-col reveal\" id=\"product_image\" style(\"width: calc(100% - 16px);\">
 
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>`);

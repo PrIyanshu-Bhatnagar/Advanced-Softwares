@@ -62,7 +62,7 @@ function mainDivison()
     develop_Product();
 }
 function createCard(object,id){
-    object.append(`<div class=\"mdl-cell mdl-cell--12-col product-card-height\" style=\"margin-bottom: 30px;\">
+    object.append(`<div class=\"mdl-cell mdl-cell--12-col product-card-height\" id=\"card\" style=\"margin-bottom: 30px;\">
                         <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\">
                             <div class=\"mdl-card__supporting-text reveal\" style=\"width: 100%; padding: 0px\">
                                 <div class=\"mdl-grid reveal\" id=\"` +id + `\" style=\"padding: 0px\">
@@ -89,34 +89,31 @@ function createSection()
 {
     var product_image = $("#1");
 
-    product_image.append(`<div class="reveal" style=\"width: 50%; height:100%;\">
+    product_image.append(`<div class="reveal" style=\"width: 45%; height:100%;\">
                             <image width=\"100%\"class=\"product-card-height mdl-shadow--2dp\" src=\"photos/busy.jpg\"> </image>
                          </div>
                          <div class=\"reveal\" style=\"width: 45%; height:100%;\">
                             <h2 align=\"center\" class=\"header reveal\">BUSY</h2>
                             <p align=\"left\" class=\"para reveal\">`+busyText+`</p>
-                            <p id=\"busy-text\" align=\"right\" class=\"reveal\"></p>
                          </div>`);
 
     product_image = $('#2');
 
-    product_image.append(`<div class=\"reveal\" style=\"width: 50%; height:100%;\">
+    product_image.append(`<div class=\"reveal\" style=\"width: 45%; height:100%;\">
                         <image width=\"100%\" class=\"product-card-height mdl-shadow--2dp\" src=\"photos/radix.png\"> </image>
                      </div>
                      <div class="reveal" style=\"width: 45%; height:100%;\">
                         <h2 align=\"center\" class=\"header reveal\">RADIX</h2>
                         <p align=\"left\" class=\"para reveal\">`+radixText+`</p>
-                        <p id=\"reddix-text\" align=\"center\" class=\"reveal\"></p>
                      </div>`);
 
     product_image = $('#3');
 
-    product_image.append(`<div class=\"reveal\" style=\"width: 50%; height:100%;\">
+    product_image.append(`<div class=\"reveal\" style=\"width: 45%; height:100%;\">
                         <image width=\"100%\" class=\"product-card-height mdl-shadow--2dp\" src=\"photos/rely.png\"> </image>
                      </div>
                      <div class="reveal" style=\"width: 45%; height:100%;\">
                         <h2 align=\"center\" class=\"header reveal\">RELY</h2>
-                        <p id=\"rely-text\" align=\"center\" class=\"reveal\"></p>
                      </div>`);
 }
 
@@ -157,8 +154,6 @@ function createFeatureCards(){
 function dependentOnSize()
 {
     $('.product-card-height').css('width', '75%');
-    $('#product_image').css('padding-left', ($(window).width()- $('.product-card-height').css('width'))/2);
-    $('#product_image').css('padding-right', ($(window).width()- $('.product-card-height').css('width'))/2);
 
     $('.service-card').css('min-width',$(window).width()/2 - 10);
     $('#service-left-card').css('margin-left',$(window).width() - $('#service-left-card').width());
@@ -187,7 +182,7 @@ function dependentOnSize()
         $('.mdl-navigation__link').css('padding','2px 20px 0px 0px');
         $('.navigation-links').css('font-size','14px');
 
-        $('#card').css('min-height','230px');
+        $('#card').css('height','230px');
 
         $('.product-card-height').css('height',$('#card').height());
 
@@ -197,7 +192,7 @@ function dependentOnSize()
 
     }
     //Tablet size
-    else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
+    else if (/*$(window).height() >= 660 && */$(window).width() >= 450)
     {
         $('h1').css("font-size","22px");
         $('.header').css('font-size','20px');
@@ -221,7 +216,7 @@ function dependentOnSize()
         $('.feature-card').css('width', '100px');
         $('.feature-card').css('height', $('.feature-card').css('width'));
 
-        $('.feature-card').css('width', ($(window).width()/2) - 10);
+        $('.feature-card').css('width', ($(window).width()/3) - 10);
         $('.feature-card').css('height', $('.feature-card').css('width'));
         $('.feature-card').css('margin', '5px');
     }
@@ -255,125 +250,3 @@ function dependentOnSize()
         $('.feature-card').css('margin', ($(window).width()-75)/2);
     }
 }
-
-$("#about_us_link").on('click',function() {
-    $('html, body').animate({scrollTop: $("#navigateToAboutUs").offset().top}, 2000);
-});
-$("#main_grid_link").click(function() {
-    $('html, body').animate({scrollTop: $("#main_grid").offset().top}, 2000);
-});
-$("#service_grid_link").click(function() {
-    $('html, body').animate({scrollTop: $("#services_grid").offset().top}, 2000);
-});
-$("#contact_us_link").click(function() {
-    $('html, body').animate({scrollTop: $("#navigateToContactUs").offset().top}, 2000);
-});
-
-var busyCount = 0, reddixCount = 0, relyCount = 0;
-
-window.setInterval(function(){
-    var para = $('#busy-text');
-    if(busyCount == 0){
-        para.fadeOut(0);
-        para.text("\"Financial Accounting (Multi-Currency)\"");
-        para.fadeIn(1500);
-        busyCount += 1;
-    }
-    else if (busyCount == 1) {
-        para.fadeOut(0);
-        para.text("\"Inventory Management (Multi-location)\"");
-        para.fadeIn(1500);
-        busyCount += 1;
-    }
-    else if (busyCount == 2) {
-        para.fadeOut(0);
-        para.text("\"Production / Bill of Material\"");
-        para.fadeIn(1500);
-        busyCount += 1;
-    }
-    else if (busyCount == 3) {
-        para.fadeOut(0);
-        para.text("\"Sales / Purchase Quotations\"");
-        para.fadeIn(1500);
-        busyCount += 1;
-    }
-    else if (busyCount == 4) {
-        para.fadeOut(0);
-        para.text("\"Sales / Purchase Order Processing\"");
-        para.fadeIn(1500);
-        busyCount += 1;
-    }
-    else if (busyCount == 5) {
-        para.fadeOut(0);
-        para.text("\"Fully User-configurable Invoicing\"");
-        para.fadeIn(1500);
-        busyCount += 1;
-    }
-    else if (busyCount == 6) {
-        para.fadeOut(0);
-        para.text("\"User-configurable Documents / Letters\"");
-        para.fadeIn(1500);
-        busyCount += 1;
-    }
-    else if (busyCount == 7) {
-        para.fadeOut(0);
-        para.text("\"User-configurable Columns in Reports\"");
-        para.fadeIn(1500);
-        busyCount += 1;
-    }
-    else if (busyCount == 8) {
-        para.fadeOut(0);
-        para.text("\"CST / VAT Reports (State-specific)\"");
-        para.fadeIn(1500);
-        busyCount += 1;
-    }
-    else if (busyCount == 9) {
-        para.fadeOut(0);
-        para.text("\"Service Tax & TDS\"");
-        para.fadeIn(1500);
-        busyCount += 1;
-    }
-    else if (busyCount == 10) {
-        para.fadeOut(0);
-        para.text("\"Mfg / Trading Excise Registers\"");
-        para.fadeIn(1500);
-        busyCount += 1;
-    }
-    else if (busyCount == 11) {
-        para.fadeOut(0);
-        para.text("\"MIS Reports & Analysis \"");
-        para.fadeIn(1500);
-        busyCount = 0;
-    }
-}, 2000);
-
-window.setInterval(function(){
-    var para = document.getElementById('busy-text');
-    if(reddixCount == 0){
-
-        reddixCount = 1;
-    }
-    else if (reddixCount == 1) {
-
-        reddixCount = 2;
-    }
-    else if (reddixCount == 2) {
-
-    reddixCount = 0;
-    }
-}, 3500);
-
-window.setInterval(function(){
-    if(relyCount == 0){
-
-        relyCount = 1;
-    }
-    else if (relyCount == 1) {
-
-        relyCount = 2;
-    }
-    else if (relyCount == 2) {
-
-    relyCount = 0;
-    }
-}, 4000);

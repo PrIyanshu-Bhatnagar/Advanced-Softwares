@@ -73,18 +73,21 @@ h2{
 #busy-text{
     color: #616161;
     font-size: 14px;
+    font-weight: bold;
     font-family: 'Inconsolata', monospace;
 }
 
 #reddix-text{
     color: #616161;
     font-size: 14px;
+    font-weight: bold;
     font-family: 'Merriweather', serif;
 }
 
 #rely-text{
     color: #616161;
     font-size: 14px;
+    font-weight: bold;
     font-family: 'Merriweather', serif;
 }
 .product-card-height{

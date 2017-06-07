@@ -164,7 +164,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','12px');
         $('.mdl-card').css('min-height','150px');
         $('.demo-card-image__filename').css('font-size','12px');
-        $('#card').css('height','150px');
+        $('#card').css('height','170px');
         $('.product-card-height').css('height',$('#card').height());
     }
     //Mobile size
@@ -172,7 +172,7 @@ function dependentOnSize()
     {
         $('h1').css("font-size","13px");
         $('.header').css('font-size','12px');
-        $('p').css('font-size','7px');
+        $('p').css('font-size','10px');
         $('p').css('margin','5px 3px 0px 0px');
         $('#about_us').css('margin-top','10%');
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');

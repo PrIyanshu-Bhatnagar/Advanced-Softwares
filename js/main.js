@@ -193,7 +193,7 @@ function dependentOnSize()
         $('#card').css('height','230px');
         $('.product-card-height').css('height',$('#card').height());
 
-        $('.feature-card').css('min-width', '200px');
+        $('.feature-card').css('min-width', '150px');
         $('.feature-card').css('min-height', $('.feature-card').css('width'));
     }
     //Mobile size
@@ -212,7 +212,7 @@ function dependentOnSize()
         $('#card').css('height','80px');
         $('.product-card-height').css('height',$('#card').height());
 
-        $('.feature-card').css('min-width', '150px');
+        $('.feature-card').css('min-width', '75px');
         $('.feature-card').css('min-height', $('.feature-card').css('width'));
     }
 }

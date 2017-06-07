@@ -63,7 +63,7 @@ function mainDivison()
 }
 function createCard(object,id){
     object.append(`<div class=\"mdl-cell mdl-cell--12-col product-card-height\" style=\"margin-bottom: 30px;\">
-                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" id=\"card\">
+                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp\">
                             <div class=\"mdl-card__supporting-text\" style=\"width: 100%; padding: 0px\">
                                 <div class=\"mdl-grid\" id=\"` +id + `\" style=\"padding: 0px\">
                                 </div>
@@ -71,6 +71,20 @@ function createCard(object,id){
                         </div>
                    </div>`);
 }
+
+function develop_Product() {
+
+   var product_image = $("#product_image");
+
+   createCard(product_image,"1"); //Id 1 is Busy
+
+   createCard(product_image,"2");//Id 2 is Reddix
+
+   createCard(product_image,"3");//Id 3 is Rely
+
+    createSection();
+}
+
 function createSection()
 {
     var product_image = $("#1");
@@ -109,19 +123,6 @@ function createSection()
 function cardWidthAdjustment() {
     var mainWidth = $(window).width();
     $(".mdl-layout__content").css('width', mainWidth);
-}
-
-function develop_Product() {
-
-   var product_image = $("#product_image");
-
-   createCard(product_image,"1"); //Id 1 is Busy
-
-   createCard(product_image,"2");//Id 2 is Reddix
-
-   createCard(product_image,"3");//Id 3 is Rely
-
-    createSection();
 }
 
 function serviceDivison() {
@@ -170,7 +171,6 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','14px');
 
         $('#card').css('min-height','230px');
-        $('#card').css('height','290px');
 
         $('.product-card-height').css('height',$('#card').height());
 
@@ -195,8 +195,7 @@ function dependentOnSize()
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
 
-        $('#card').css('min-height','200px');
-        $('#card').css('height','230px');
+        $('#card').css('min-height','170px');
 
         $('.product-card-height').css('height',$('#card').height());
 
@@ -222,7 +221,6 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','10px');
 
         $('#card').css('min-height','150px');
-        $('#card').css('height','80px');
 
         $('.product-card-height').css('height',$('#card').height());
 

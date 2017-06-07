@@ -149,6 +149,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','14px');
         $('.mdl-card').css('min-height','175px');
         $('.demo-card-image__filename').css('font-size','14px');
+        $('#card').css('height','325px');
         $('.product-card-height').css('height',$('#card').height());
     }
     //Tablet size
@@ -163,6 +164,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','12px');
         $('.mdl-card').css('min-height','150px');
         $('.demo-card-image__filename').css('font-size','12px');
+        $('#card').css('height','150px');
         $('.product-card-height').css('height',$('#card').height());
     }
     //Mobile size
@@ -177,6 +179,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','10px');
         $('.mdl-card').css('min-height','100px');
         $('.demo-card-image__filename').css('font-size','8px');
+        $('#card').css('height','75px');
         $('.product-card-height').css('height',$('#card').height());
     }
 }

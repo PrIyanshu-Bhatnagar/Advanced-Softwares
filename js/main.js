@@ -149,7 +149,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','14px');
         $('.mdl-card').css('min-height','175px');
         $('.demo-card-image__filename').css('font-size','14px');
-        $('.product-card-height').css('height','325px');
+        $('.product-card-height').css('height',$('#1').height());
     }
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
@@ -163,7 +163,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','12px');
         $('.mdl-card').css('min-height','150px');
         $('.demo-card-image__filename').css('font-size','12px');
-        $('.product-card-height').css('height','180px');
+        $('.product-card-height').css('height',$('#1').height());
     }
     //Mobile size
     else
@@ -177,7 +177,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','10px');
         $('.mdl-card').css('min-height','100px');
         $('.demo-card-image__filename').css('font-size','8px');
-        $('.product-card-height').css('height','70px');
+        $('.product-card-height').css('height',$('#1').height());
     }
 }
 

@@ -223,6 +223,8 @@ function dependentOnSize()
     //Mobile size
     else
     {
+        $('.product-card-height').css('width', '100%');
+
         $('h1').css("font-size","13px");
         $('.header').css('font-size','12px');
 

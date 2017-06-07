@@ -23,7 +23,6 @@ h1{
 p{
     color: #616161;
     font-size: 25px;
-    margin: 20px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     font-family: 'Merriweather', serif;
 }
@@ -91,6 +90,9 @@ h2{
 .product-card-height{
 height: 350px
 }
-.reveal{
+.reveal{}
 
+.feature-card
+{
+    margin: 5px
 }

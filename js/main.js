@@ -2,13 +2,16 @@ window.sr = ScrollReveal({ reset: true });
 
 var aboutUsText = "\"We are in this business since 1992\""
 var servicesText= "";
-var busyText = `BUSY is an integrated business accounting software for Micro, Small and Medium businesses.  With over 1,50,000 installations (over 6 Lac Users) worldwide, BUSY is one of the leading accounting softwares in India.\n\tThe salient features of BUSY are:`;
+var busyText = `BUSY is an integrated business accounting software for Micro, Small and Medium businesses.  With over 1,50,000 installations (over 6 Lac Users) worldwide, BUSY is one of the leading accounting softwares in India. The salient features of BUSY are:`;
+var radixText =`Radix is a full-featured Windows-based Financial Accounting Software. It has an array of powerful features that can be configured for any type of Business/Domain.`;
+
 $(document).ready(function()
 {
     aboutDivison();
     serviceDivison();
     mainDivison();
     cardWidthAdjustment();
+    createFeatureCards();
     dependentOnSize();
     sr.reveal('.reveal', { duration: 2000, origin: 'right', container: '#about_us_scroll', distance: '400px'});
     sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#main_grid', distance: '400px'});
@@ -81,7 +84,7 @@ function createSection()
                          </div>
                          <div class=\"reveal\" style=\"width: 45%; height:100%;\">
                             <h2 align=\"center\" class=\"header reveal\">BUSY</h2>
-                            <p id=\"busy-para\" align=\"left\" class=\"reveal\">`+busyText+`</p>
+                            <p align=\"left\" class=\"para reveal\">`+busyText+`</p>
                             <p id=\"busy-text\" align=\"right\" class=\"reveal\"></p>
                          </div>`);
 
@@ -92,6 +95,7 @@ function createSection()
                      </div>
                      <div class="reveal" style=\"width: 45%; height:100%;\">
                         <h2 align=\"center\" class=\"header reveal\">RADIX</h2>
+                        <p align=\"left\" class=\"para reveal\">`+radixText+`</p>
                         <p id=\"reddix-text\" align=\"center\" class=\"reveal\"></p>
                      </div>`);
 
@@ -137,41 +141,60 @@ function serviceDivison() {
                   </div>`);
 }
 
+function createFeatureCards(){
+    var division = $('#Features').children();
+    for(var i = 0; i < 12; i++)
+    {
+        division.append(`<div class=\"mdl-card mdl-shadow--2dp feature-card reveal\" align=\"center\" id=\"feature-card-`+i+`\" style=\"min-height: 0px\">
+                            <div class=\"mdl-card__supporting-text reveal\" align=\"center\" style=\"padding:0px\">
+
+                            </div>
+                        </div>`);
+    }
+}
+
 function dependentOnSize()
 {
+    $('.feature-card').css('min-width', '230px');
+    $('.feature-card').css('min-height', $('.feature-card').css('width'));
+
     if (/*$(window).height() >= 768 && */$(window).width() >= 830)
     {
         $('h1').css("font-size","50px");
         $('.header').css('font-size','35px');
         $('#busy-text').css('font-size','25px');
-        $('p').css('margin','10px 0px 0px 0px');
-        $('#busy-para').css('font-size','18px');
-        $('#busy-para').css('margin','2px 0px 0px 10px');
+        $('#busy-text').css('margin-top','25px');
+        $('.para').css('font-size','18px');
+        $('.para').css('margin','10px 0px 0px 15px');
         $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 20px 0px 0px');
         $('.navigation-links').css('font-size','14px');
-        $('.mdl-card').css('min-height','175px');
+        $('#card').css('min-height','175px');
         $('.demo-card-image__filename').css('font-size','14px');
         $('#card').css('height','325px');
         $('.product-card-height').css('height',$('#card').height());
+
+        $('.feature-card').css('min-width', '230px');
+        $('.feature-card').css('min-height', $('.feature-card').css('width'));
     }
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
     {
         $('h1').css("font-size","22px");
         $('.header').css('font-size','20px');
-        $('#busy-text').css('font-size','20px');
-        $('#busy-para').css('font-size','10px');
-        $('#busy-para').css('margin','0px 0px 0px 5px');
-        $('p').css('margin','8px 0px 0px 0px');
+        $('#busy-text').css('font-size','12px');
+        $('.para').css('font-size','10px');
+        $('.para').css('margin','0px 0px 0px 10px');
         $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
-        $('.mdl-card').css('min-height','150px');
+        $('#card').css('min-height','150px');
         $('.demo-card-image__filename').css('font-size','12px');
         $('#card').css('height','230px');
         $('.product-card-height').css('height',$('#card').height());
-        $('#busy-para').css('font-size','15px');
+
+        $('.feature-card').css('min-width', '200px');
+        $('.feature-card').css('min-height', $('.feature-card').css('width'));
     }
     //Mobile size
     else
@@ -179,16 +202,18 @@ function dependentOnSize()
         $('h1').css("font-size","13px");
         $('.header').css('font-size','12px');
         $('#busy-text').css('font-size','10px');
-        $('#busy-para').css('font-size','10px');
-        $('#busy-para').css('margin-left','5px');
-        $('p').css('margin','2px 0px 0px 0px');
+        $('.para').css('font-size','8px');
+        $('.para').css('margin','0px 0px 0px 5px');
         $('#about_us').css('margin-top','10%');
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');
-        $('.mdl-card').css('min-height','100px');
+        $('#card').css('min-height','100px');
         $('.demo-card-image__filename').css('font-size','8px');
-        $('#card').css('height','105px');
+        $('#card').css('height','80px');
         $('.product-card-height').css('height',$('#card').height());
+
+        $('.feature-card').css('min-width', '150px');
+        $('.feature-card').css('min-height', $('.feature-card').css('width'));
     }
 }
 

@@ -247,6 +247,6 @@ function dependentOnSize()
 
         $('.feature-card').css('width', '120px');
         $('.feature-card').css('height', $('.feature-card').css('width'));
-        $('.feature-card').css('margin', ($(window).width()-75)/2);
+        $('.feature-card').css('margin', ($(window).width()-120)/2);
     }
 }

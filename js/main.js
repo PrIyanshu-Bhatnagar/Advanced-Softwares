@@ -64,7 +64,7 @@ function mainDivison()
 }
 function createCard(object,id){
     object.append(`<div class=\"mdl-cell mdl-cell--12-col product-card-height\" style=\"margin-bottom: 30px;\">
-                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp\">
+                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" id=\"card\">
                             <div class=\"mdl-card__supporting-text\" style=\"width: 100%; padding: 0px\">
                                 <div class=\"mdl-grid\" id=\"` +id + `\" style=\"padding: 0px\">
                                 </div>
@@ -149,7 +149,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','14px');
         $('.mdl-card').css('min-height','175px');
         $('.demo-card-image__filename').css('font-size','14px');
-        $('.product-card-height').css('height',$('#1').height());
+        $('.product-card-height').css('height',$('#card').height());
     }
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
@@ -163,7 +163,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','12px');
         $('.mdl-card').css('min-height','150px');
         $('.demo-card-image__filename').css('font-size','12px');
-        $('.product-card-height').css('height',$('#1').height());
+        $('.product-card-height').css('height',$('#card').height());
     }
     //Mobile size
     else
@@ -177,7 +177,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','10px');
         $('.mdl-card').css('min-height','100px');
         $('.demo-card-image__filename').css('font-size','8px');
-        $('.product-card-height').css('height',$('#1').height());
+        $('.product-card-height').css('height',$('#card').height());
     }
 }
 

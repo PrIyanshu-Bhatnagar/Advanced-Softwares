@@ -169,7 +169,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','12px');
         $('.mdl-card').css('min-height','150px');
         $('.demo-card-image__filename').css('font-size','12px');
-        $('#card').css('height','170px');
+        $('#card').css('height','200px');
         $('.product-card-height').css('height',$('#card').height());
         $('#busy-para').css('font-size','15px');
     }

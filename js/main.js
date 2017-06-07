@@ -169,7 +169,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','12px');
         $('.mdl-card').css('min-height','150px');
         $('.demo-card-image__filename').css('font-size','12px');
-        $('#card').css('height','200px');
+        $('#card').css('height','230px');
         $('.product-card-height').css('height',$('#card').height());
         $('#busy-para').css('font-size','15px');
     }
@@ -187,7 +187,7 @@ function dependentOnSize()
         $('.navigation-links').css('font-size','10px');
         $('.mdl-card').css('min-height','100px');
         $('.demo-card-image__filename').css('font-size','8px');
-        $('#card').css('height','75px');
+        $('#card').css('height','105px');
         $('.product-card-height').css('height',$('#card').height());
     }
 }

@@ -2,7 +2,7 @@ window.sr = ScrollReveal({ reset: true });
 
 var aboutUsText = "\"We are in this business since 1992\""
 var servicesText= "";
-var busyText = `BUSY is an integrated business accounting software for Micro, Small and Medium businesses.  With over 1,50,000 installations (over 6 Lac Users) worldwide, BUSY is one of the leading accounting softwares in India. The salient features of BUSY are:`;
+var busyText = `BUSY is an integrated business accounting software for Micro, Small and Medium businesses with over 1,50,000 installations (over 6 Lac Users) worldwide.`;
 var radixText =`Radix is a full-featured Windows-based Financial Accounting Software. It has an array of powerful features that can be configured for any type of Business/Domain.`;
 
 $(document).ready(function()
@@ -63,7 +63,7 @@ function mainDivison()
 }
 function createCard(object,id){
     object.append(`<div class=\"mdl-cell mdl-cell--12-col product-card-height\" id=\"card\" style=\"margin-bottom: 30px;\">
-                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\">
+                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\" style=\"min-height:0px;\">
                             <div class=\"mdl-card__supporting-text reveal\" style=\"width: 100%; padding: 0px\">
                                 <div class=\"mdl-grid reveal\" id=\"` +id + `\" style=\"padding: 0px\">
                                 </div>
@@ -182,7 +182,7 @@ function dependentOnSize()
         $('.mdl-navigation__link').css('padding','2px 20px 0px 0px');
         $('.navigation-links').css('font-size','14px');
 
-        $('#card').css('height','230px');
+        $('#card').css('height','220px');
 
         $('.product-card-height').css('height',$('#card').height());
 
@@ -209,7 +209,7 @@ function dependentOnSize()
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
 
-        $('#card').css('min-height','170px');
+        $('#card').css('height','200px');
 
         $('.product-card-height').css('height',$('#card').height());
 
@@ -238,7 +238,7 @@ function dependentOnSize()
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');
 
-        $('#card').css('min-height','150px');
+        $('#card').css('height','150px');
 
         $('.product-card-height').css('height',$('#card').height());
 

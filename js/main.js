@@ -38,7 +38,7 @@ function aboutDivison()
     var aboutDiv = $("#about_us");
     aboutDiv.empty();
     aboutDiv.append(`<div class=\"mdl-cell mdl-cell--12-col\" align=\"center\" id=\"about_us_scroll\">
-                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\" style=\"background: rgba(0,0,0,0.12); min-height: 175px\">
+                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp about-us-card reveal\" style=\"background: rgba(0,0,0,0.12);\">
                             <div class=\"mdl-card__supporting-text top-margin reveal\">
                                 <h1 align=\"center\" id=\"aboutUs_header\" style=\"color: white\">ADVANCED SOFTWARES</h1>
                                 <p align=\"center\" style=\"color: white\" class=\"gen-text\">`+ aboutUsText+ `</p>
@@ -155,24 +155,27 @@ function createFeatureCards(){
 
 function dependentOnSize()
 {
-    $('.feature-card').css('min-width', '230px');
-    $('.feature-card').css('min-height', $('.feature-card').css('width'));
-
     if (/*$(window).height() >= 768 && */$(window).width() >= 830)
     {
         $('h1').css("font-size","50px");
         $('.header').css('font-size','35px');
+
         $('#busy-text').css('font-size','25px');
         $('#busy-text').css('margin-top','25px');
         $('.para').css('font-size','18px');
         $('.para').css('margin','10px 0px 0px 15px');
+
         $('.gen-text').css('font-size','23px');
+
         $('#about_us').css('margin-top','15%');
+        $('.about-us-card').css('min-height','175px');
+
         $('.mdl-navigation__link').css('padding','2px 20px 0px 0px');
         $('.navigation-links').css('font-size','14px');
-        $('#card').css('min-height','175px');
-        $('.demo-card-image__filename').css('font-size','14px');
+
+        $('#card').css('min-height','230px');
         $('#card').css('height','290px');
+
         $('.product-card-height').css('height',$('#card').height());
 
         $('.feature-card').css('min-width', '230px');
@@ -183,16 +186,22 @@ function dependentOnSize()
     {
         $('h1').css("font-size","22px");
         $('.header').css('font-size','20px');
+
         $('#busy-text').css('font-size','12px');
         $('.para').css('font-size','10px');
         $('.para').css('margin','0px 0px 0px 10px');
+
         $('.gen-text').css('font-size','20px');
+
         $('#about_us').css('margin-top','15%');
+        $('.about-us-card').css('min-height','150px');
+
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
+
         $('#card').css('min-height','200px');
-        $('.demo-card-image__filename').css('font-size','12px');
         $('#card').css('height','230px');
+
         $('.product-card-height').css('height',$('#card').height());
 
         $('.feature-card').css('min-width', '120px');
@@ -203,16 +212,22 @@ function dependentOnSize()
     {
         $('h1').css("font-size","13px");
         $('.header').css('font-size','12px');
+
         $('#busy-text').css('font-size','10px');
         $('.para').css('font-size','8px');
         $('.para').css('margin','0px 0px 0px 5px');
+
         $('.gen-text').css('font-size','8px');
+
         $('#about_us').css('margin-top','10%');
+        $('.about-us-card').css('min-height','125px');
+
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');
+
         $('#card').css('min-height','150px');
-        $('.demo-card-image__filename').css('font-size','8px');
         $('#card').css('height','80px');
+
         $('.product-card-height').css('height',$('#card').height());
 
         $('.feature-card').css('min-width', '75px');

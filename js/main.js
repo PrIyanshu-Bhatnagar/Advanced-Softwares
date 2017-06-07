@@ -186,7 +186,7 @@ function dependentOnSize()
         $('#busy-text').css('font-size','12px');
         $('.para').css('font-size','10px');
         $('.para').css('margin','0px 0px 0px 10px');
-        $('.gen-text').css('font-size','18px');
+        $('.gen-text').css('font-size','20px');
         $('#about_us').css('margin-top','15%');
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
@@ -215,7 +215,7 @@ function dependentOnSize()
         $('#card').css('height','80px');
         $('.product-card-height').css('height',$('#card').height());
 
-        $('.feature-card').css('min-width', '50px');
+        $('.feature-card').css('min-width', '75px');
         $('.feature-card').css('min-height', $('.feature-card').css('width'));
     }
 }

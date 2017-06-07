@@ -14,7 +14,7 @@ $(document).ready(function()
     createFeatureCards();
     dependentOnSize();
     sr.reveal('.reveal', { duration: 2000, origin: 'right', container: '#about_us_scroll', distance: '400px'});
-    sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#main_grid', distance: '400px'});
+    sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#product_image', distance: '400px'});
     sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#services_grid', distance: '400px'});
 
 });
@@ -28,7 +28,7 @@ $( window ).resize(function()
     dependentOnSize();
 
     sr.reveal('.reveal', { duration: 2000, origin: 'bottom', container: '#about_us_scroll', distance: '200px'});
-    sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#main_grid', distance: '200px'});
+    sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#product_image', distance: '200px'});
     sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#services_grid', distance: '200px'});
 
 });
@@ -51,10 +51,10 @@ function mainDivison()
 {
     var mainDiv = $("#main_grid");
     mainDiv.empty();
-    mainDiv.append(`<div class=\"reveal\">
-                        <h1 align=\"center\" class=\"top-margin reveal\">PRODUCTS</h1>
-                        <div class=\"mdl-grid reveal\")>
-                            <div class=\"mdl-cell mdl-cell--12-col reveal\" id=\"product_image\" style(\"width: calc(100% - 16px);\">
+    mainDiv.append(`<div>
+                        <h1 align=\"center\" class=\"top-margin\">PRODUCTS</h1>
+                        <div class=\"mdl-grid\")>
+                            <div class=\"mdl-cell mdl-cell--12-col\" id=\"product_image\" style(\"width: calc(100% - 16px);\">
 
                             </div>
                         </div>
@@ -63,9 +63,9 @@ function mainDivison()
 }
 function createCard(object,id){
     object.append(`<div class=\"mdl-cell mdl-cell--12-col product-card-height\" style=\"margin-bottom: 30px;\">
-                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp\">
-                            <div class=\"mdl-card__supporting-text\" style=\"width: 100%; padding: 0px\">
-                                <div class=\"mdl-grid\" id=\"` +id + `\" style=\"padding: 0px\">
+                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\">
+                            <div class=\"mdl-card__supporting-text reveal\" style=\"width: 100%; padding: 0px\">
+                                <div class=\"mdl-grid reveal\" id=\"` +id + `\" style=\"padding: 0px\">
                                 </div>
                             </div>
                         </div>
@@ -128,18 +128,23 @@ function cardWidthAdjustment() {
 function serviceDivison() {
     var serDiv = $('#services_grid');
     serDiv.empty();
-    serDiv.append(`<div class=\"mdl-cell mdl-cell--12-col reveal\" id=\"service_grid_scroll\">
-                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\" >
-                            <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px\">
-                                <h1 align=\"center\" class=\"top-margin reveal\">SERVICES</h1>
-                                <p align=\"center\" class=\"gen-text reveal\">`+aboutUsText+`</p>
-                            </div>
+    serDiv.append(`<div class=\"mdl-card mdl-shadow--2dp reveal service-card\" >
+                        <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px\">
                         </div>
-                  </div>`);
+                    </div>
+                    <div class=\"mdl-card mdl-shadow--2dp reveal service-card\" id="service-left-card">
+                        <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px\">
+                        </div>
+                    </div>
+                    <div class=\"mdl-card mdl-shadow--2dp reveal service-card\" >
+                        <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px\">
+                        </div>
+                    </div>
+                    `);
 }
 
 function createFeatureCards(){
-    var division = $('#Features').children();
+    var division = $('#feature-grid');
     for(var i = 0; i < 12; i++)
     {
         division.append(`<div class=\"mdl-card mdl-shadow--2dp feature-card reveal\" align=\"center\" id=\"feature-card-`+i+`\" style=\"min-height: 0px\">
@@ -149,10 +154,22 @@ function createFeatureCards(){
                         </div>`);
     }
 }
-
 function dependentOnSize()
 {
-    if (/*$(window).height() >= 768 && */$(window).width() >= 830)
+    $('.product-card-height').css('width', '75%');
+    $('#product_image').css('padding-left', ($(window).width()- $('.product-card-height').css('width'))/2);
+    $('#product_image').css('padding-right', ($(window).width()- $('.product-card-height').css('width'))/2);
+
+    $('.service-card').css('min-width',$(window).width()/2 - 10);
+    $('#service-left-card').css('margin-left',$(window).width() - $('#service-left-card').width());
+
+    if ($(window).width() >= 1440)
+    {
+        $('.feature-card').css('width', ($(window).width()/6) - 10);
+        $('.feature-card').css('height', $('.feature-card').css('width'));
+        $('.feature-card').css('margin', '5px');
+    }
+    if (/*$(window).height() >= 768 && */$(window).width() >= 840)
     {
         $('h1').css("font-size","50px");
         $('.header').css('font-size','35px');
@@ -174,8 +191,10 @@ function dependentOnSize()
 
         $('.product-card-height').css('height',$('#card').height());
 
-        $('.feature-card').css('min-width', '230px');
-        $('.feature-card').css('min-height', $('.feature-card').css('width'));
+        $('.feature-card').css('width', ($(window).width()/4) - 10);
+        $('.feature-card').css('height', $('.feature-card').css('width'));
+        $('.feature-card').css('margin', '5px');
+
     }
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
@@ -199,8 +218,12 @@ function dependentOnSize()
 
         $('.product-card-height').css('height',$('#card').height());
 
-        $('.feature-card').css('min-width', '120px');
-        $('.feature-card').css('min-height', $('.feature-card').css('width'));
+        $('.feature-card').css('width', '100px');
+        $('.feature-card').css('height', $('.feature-card').css('width'));
+
+        $('.feature-card').css('width', ($(window).width()/2) - 10);
+        $('.feature-card').css('height', $('.feature-card').css('width'));
+        $('.feature-card').css('margin', '5px');
     }
     //Mobile size
     else
@@ -224,8 +247,12 @@ function dependentOnSize()
 
         $('.product-card-height').css('height',$('#card').height());
 
-        $('.feature-card').css('min-width', '75px');
-        $('.feature-card').css('min-height', $('.feature-card').css('width'));
+        $('.feature-card').css('width', '75px');
+        $('.feature-card').css('height', $('.feature-card').css('width'));
+
+        $('.feature-card').css('width', '75px');
+        $('.feature-card').css('height', $('.feature-card').css('width'));
+        $('.feature-card').css('margin', ($(window).width()-75)/2);
     }
 }
 

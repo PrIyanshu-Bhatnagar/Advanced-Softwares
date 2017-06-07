@@ -89,10 +89,16 @@ h2{
 }
 .product-card-height{
 height: 350px
+margin:0px;
 }
 .reveal{}
 
 .feature-card
 {
     margin: 5px
+}
+.service-card
+{
+    margin-bottom: 10px;
+    min-height: 230px;
 }

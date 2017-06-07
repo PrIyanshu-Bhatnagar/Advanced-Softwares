@@ -274,9 +274,9 @@ function dependentOnSize()
         $('.feature-card').css('width', '75px');
         $('.feature-card').css('height', $('.feature-card').css('width'));
 
-        $('.feature-card').css('width', '150px');
+        $('.feature-card').css('width', $(window).width() - 10);
         $('.feature-card').css('height', $('.feature-card').css('width'));
-        $('.feature-card').css('margin', ($(window).width()-150)/2);
+        $('.feature-card').css('margin', '5px');
 
         $('.business-card').css('width',$(window).width()/2);
         $('.business-card').css('height',$('.business-card').css('width'));

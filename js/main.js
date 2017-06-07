@@ -12,6 +12,7 @@ $(document).ready(function()
     mainDivison();
     cardWidthAdjustment();
     createFeatureCards();
+    createBusinessCards();
     dependentOnSize();
     sr.reveal('.reveal', { duration: 2000, origin: 'right', container: '#about_us_scroll', distance: '400px'});
     sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#product_image', distance: '400px'});
@@ -25,6 +26,8 @@ $( window ).resize(function()
     serviceDivison();
     mainDivison();
     cardWidthAdjustment();
+    createFeatureCards();
+    createBusinessCards();
     dependentOnSize();
 
     sr.reveal('.reveal', { duration: 2000, origin: 'bottom', container: '#about_us_scroll', distance: '200px'});
@@ -142,9 +145,24 @@ function serviceDivison() {
 
 function createFeatureCards(){
     var division = $('#feature-grid');
+    division.empty();
     for(var i = 0; i < 12; i++)
     {
         division.append(`<div class=\"mdl-card mdl-shadow--2dp feature-card reveal\" align=\"center\" id=\"feature-card-`+i+`\" style=\"min-height: 0px\">
+                            <div class=\"mdl-card__supporting-text reveal\" align=\"center\" style=\"padding:0px\">
+
+                            </div>
+                        </div>`);
+    }
+}
+
+function createBusinessCards()
+{
+    var division = $('#business-segments');
+    division.empty();
+    for(var i = 0; i < 8; i++)
+    {
+        division.append(`<div class=\"mdl-card reveal business-card\" align=\"center\" id=\"business-card-`+i+`\" style=\"min-height: 0px; margin:0px\">
                             <div class=\"mdl-card__supporting-text reveal\" align=\"center\" style=\"padding:0px\">
 
                             </div>
@@ -160,9 +178,12 @@ function dependentOnSize()
 
     if ($(window).width() >= 1440)
     {
-        $('.feature-card').css('width', ($(window).width()/6) - 10);
+        $('.feature-card').css('width', ($(window).width()/8) - 10);
         $('.feature-card').css('height', $('.feature-card').css('width'));
         $('.feature-card').css('margin', '5px');
+
+        $('.business-card').css('width',$(window).width()/4);
+        $('.business-card').css('height',$('.business-card').css('width'));
     }
     if (/*$(window).height() >= 768 && */$(window).width() >= 840)
     {
@@ -186,13 +207,16 @@ function dependentOnSize()
 
         $('.product-card-height').css('height',$('#card').height());
 
-        $('.feature-card').css('width', ($(window).width()/4) - 10);
+        $('.feature-card').css('width', ($(window).width()/6) - 10);
         $('.feature-card').css('height', $('.feature-card').css('width'));
         $('.feature-card').css('margin', '5px');
 
+        $('.business-card').css('width',$(window).width()/4);
+        $('.business-card').css('height',$('.business-card').css('width'));
+
     }
     //Tablet size
-    else if (/*$(window).height() >= 660 && */$(window).width() >= 450)
+    else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
     {
         $('h1').css("font-size","22px");
         $('.header').css('font-size','20px');
@@ -216,9 +240,12 @@ function dependentOnSize()
         $('.feature-card').css('width', '100px');
         $('.feature-card').css('height', $('.feature-card').css('width'));
 
-        $('.feature-card').css('width', ($(window).width()/3) - 10);
+        $('.feature-card').css('width', ($(window).width()/4) - 10);
         $('.feature-card').css('height', $('.feature-card').css('width'));
         $('.feature-card').css('margin', '5px');
+
+        $('.business-card').css('width',$(window).width()/4);
+        $('.business-card').css('height',$('.business-card').css('width'));
     }
     //Mobile size
     else
@@ -250,5 +277,8 @@ function dependentOnSize()
         $('.feature-card').css('width', '150px');
         $('.feature-card').css('height', $('.feature-card').css('width'));
         $('.feature-card').css('margin', ($(window).width()-150)/2);
+
+        $('.business-card').css('width',$(window).width()/2);
+        $('.business-card').css('height',$('.business-card').css('width'));
     }
 }

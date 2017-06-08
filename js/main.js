@@ -14,9 +14,9 @@ $(document).ready(function()
     createFeatureCards();
     createBusinessCards();
     dependentOnSize();
-    sr.reveal('.reveal', { duration: 2000, origin: 'right', container: '#about_us_scroll', distance: '400px'});
-    sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#product_image', distance: '400px'});
-    sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#services_grid', distance: '400px'});
+    sr.reveal('.reveal', { duration: 1000, origin: 'right', container: '#about_us_scroll', distance: '400px'});
+    sr.reveal('.reveal', { duration: 1000,origin: 'bottom', container: '#product_image', distance: '400px'});
+    sr.reveal('.reveal', { duration: 1000,origin: 'bottom', container: '#services_grid', distance: '400px'});
 
 });
 
@@ -30,9 +30,9 @@ $( window ).resize(function()
     createBusinessCards();
     dependentOnSize();
 
-    sr.reveal('.reveal', { duration: 2000, origin: 'bottom', container: '#about_us_scroll', distance: '200px'});
-    sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#product_image', distance: '200px'});
-    sr.reveal('.reveal', { duration: 2000,origin: 'bottom', container: '#services_grid', distance: '200px'});
+    sr.reveal('.reveal', { duration: 1000, origin: 'bottom', container: '#about_us_scroll', distance: '200px'});
+    sr.reveal('.reveal', { duration: 1000,origin: 'bottom', container: '#product_image', distance: '200px'});
+    sr.reveal('.reveal', { duration: 1000,origin: 'bottom', container: '#services_grid', distance: '200px'});
 
 });
 
@@ -198,9 +198,10 @@ function dependentOnSize()
         $('.para').css('margin','10px 0px 0px 15px');
 
         $('.gen-text').css('font-size','23px');
+        $('.gen-text').css('margin-top','20px');
 
-        $('#about_us').css('margin-top','15%');
-        $('.about-us-card').css('min-height','175px');
+        $('.about-us-card').css('height','175px');
+        $('#about_us').css('margin-top',$(window).height()/2 - 65 - $('#about_us').css('height'));
 
         $('.mdl-navigation__link').css('padding','2px 20px 0px 0px');
         $('.navigation-links').css('font-size','14px');
@@ -227,10 +228,11 @@ function dependentOnSize()
         $('.para').css('font-size','10px');
         $('.para').css('margin','0px 0px 0px 10px');
 
-        $('.gen-text').css('font-size','20px');
+        $('.gen-text').css('font-size','18px');
+        $('.gen-text').css('margin-top','12px');
 
-        $('#about_us').css('margin-top','15%');
-        $('.about-us-card').css('min-height','150px');
+        $('.about-us-card').css('height','130px');
+        $('#about_us').css('margin-top',$(window).height()/2 - 65 - $('#about_us').css('height'));
 
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
@@ -261,10 +263,11 @@ function dependentOnSize()
         $('.para').css('font-size','8px');
         $('.para').css('margin','0px 0px 0px 5px');
 
-        $('.gen-text').css('font-size','8px');
+        $('.gen-text').css('font-size','10px');
+        $('.gen-text').css('margin-top','5px');
 
-        $('#about_us').css('margin-top','10%');
-        $('.about-us-card').css('min-height','125px');
+        $('.about-us-card').css('height','100px');
+        $('#about_us').css('margin-top',$(window).height()/2 - 65 - $('#about_us').css('height'));
 
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');

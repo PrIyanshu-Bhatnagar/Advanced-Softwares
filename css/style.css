@@ -29,6 +29,9 @@ p{
 h2{
     margin: 0px 0px 0px 0px
 }
+video {
+  object-fit: fill;
+}
 .header{
     color: #424242;
     font-size: 35px;

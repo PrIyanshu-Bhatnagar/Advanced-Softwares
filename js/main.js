@@ -175,7 +175,8 @@ function dependentOnSize()
 
     $('.service-card').css('min-width',$(window).width()/2 - 10);
     $('#service-left-card').css('margin-left',$(window).width() - $('#service-left-card').width());
-    $('.video').css('height',$(window).height() - 65);
+    $('#video').css('height',$(window).height() - 65);
+    $('#video').css('width',$(window).width())
 
     if ($(window).width() >= 1440)
     {

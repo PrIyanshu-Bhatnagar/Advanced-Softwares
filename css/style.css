@@ -109,3 +109,50 @@ margin:0px;
     margin-bottom: 10px;
     min-height: 230px;
 }
+.icon-0
+{
+    background: url(photos/ic_accessibility_black_24dp_2x.png)center/cover;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: center;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.business-card-margin
+{
+    margin-top: 20px;
+}
+.business-card-text
+{
+    align-items: left;
+}
+.business-card-black
+{
+    color: #424242;
+}
+
+.business-card-white
+{
+    color: #F5F5F5;
+}

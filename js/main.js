@@ -139,7 +139,7 @@ function createFeatureCards(){
     for(var i = 0; i < 12; i++)
     {
         division.append(`<div class=\"mdl-card mdl-shadow--2dp feature-card reveal\" align=\"center\" id=\"feature-card-`+i+`\" style=\"min-height: 0px\">
-                            <div class=\"mdl-card__supporting-text reveal\" style=\"padding-top:45px\">
+                            <div class=\"mdl-card__supporting-text reveal\" align=\"center\" style=\"padding: 0; padding-top: 5px;\">
 
                             </div>
                         </div>`);
@@ -155,52 +155,52 @@ function drawFeatureIcons()
         switch(i)
         {
             case 0:
-                    icon.append(`<i class=\"material-icons\">accessibility</i>`);
-                    icon.append(`<p class=\"\">Accessibility</p>`);
+                    icon.append(`<i class=\"material-icons\">monetization_on</i>`);
+                    icon.append(`<p class=\"business-card-para\">Comprehensive Financial Accounting</p>`);
                     break;
             case 1:
-                    icon.append(`<i class=\"material-icons\">accessibility</i>`);
-                    icon.append(`<p class=\"\">Accessibility</p>`);
+                    icon.append(`<i class=\"material-icons\">add_location</i>`);
+                    icon.append(`<p class=\"business-card-para\">Multi-location Inventory</p>`);
                     break;
             case 2:
-                    icon.append(`<i class=\"material-icons\">print</i>`);
-                    icon.append(`<p class=\"\">Print</p>`);
+                    icon.append(`<i class=\"material-icons\">attach_money</i>`);
+                    icon.append(`<p class=\"business-card-para\">GST, VAT, Excise, Service Tax, TDS</p>`);
                     break;
             case 3:
-                    icon.append(`<i class=\"material-icons\">sync</i>`);
-                    icon.append(`<p class=\"\">Backup</p>`);
+                    icon.append(`<i class=\"material-icons\">print</i>`);
+                    icon.append(`<p class=\"business-card-para\">Confrigurable Invoicing \/ Document Printing</p>`);
                     break;
             case 4:
                     icon.append(`<i class=\"material-icons\">notifications_active</i>`);
-                    icon.append(`<p class=\"\">Email/SMS</p>`);
+                    icon.append(`<p class=\"business-card-para\">Email \/ SMS</p>`);
                     break;
             case 5:
                     icon.append(`<i class=\"material-icons\">accessibility</i>`);
-                    icon.append(`<p class=\"\">Accessibility</p>`);
+                    icon.append(`<p class=\"business-card-para\">Enquiry Management</p>`);
                     break;
             case 6:
-                    icon.append(`<i class=\"material-icons\">accessibility</i>`);
-                    icon.append(`<p class=\"\">Accessibility</p>`);
+                    icon.append(`<i class=\"material-icons\">call</i>`);
+                    icon.append(`<p class=\"business-card-para\">Customer Support Management</p>`);
                     break;
             case 7:
-                    icon.append(`<i class=\"material-icons\">accessibility</i>`);
-                    icon.append(`<p class=\"\">Accessibility</p>`);
+                    icon.append(`<i class=\"material-icons\">map</i>`);
+                    icon.append(`<p class=\"business-card-para\">Multi-Branch \/ Location Management</p>`);
                     break;
             case 8:
-                    icon.append(`<i class=\"material-icons\">accessibility</i>`);
-                    icon.append(`<p class=\"\">Accessibility</p>`);
+                    icon.append(`<i class=\"material-icons\">pie_chart</i>`);
+                    icon.append(`<p class=\"business-card-para\">MIS Reports & Analysis</p>`);
                     break;
             case 9:
-                    icon.append(`<i class=\"material-icons\">accessibility</i>`);
-                    icon.append(`<p class=\"\">Accessibility</p>`);
+                    icon.append(`<i class=\"material-icons\">done_all</i>`);
+                    icon.append(`<p class=\"business-card-para\">Checks and Controls</p>`);
                     break;
             case 10:
-                    icon.append(`<i class=\"material-icons\">accessibility</i>`);
-                    icon.append(`<p class=\"\">Accessibility</p>`);
+                    icon.append(`<i class=\"material-icons\">sync</i>`);
+                    icon.append(`<p class=\"business-card-para\">Payroll Management</p>`);
                     break;
             case 11:
-                    icon.append(`<i class=\"material-icons\">accessibility</i>`);
-                    icon.append(`<p class=\"\">Accessibility</p>`);
+                    icon.append(`<i class=\"material-icons\">print</i>`);
+                    icon.append(`<p class=\"business-card-para\">Print</p>`);
                     break;
 
         }
@@ -213,7 +213,7 @@ function createBusinessCards()
     division.empty();
     for(var i = 0; i < 8; i++)
     {
-        division.append(`<div class=\"mdl-card mdl-shadow--2dp reveal business-card\" id=\"business-card-`+i+`\" style=\"min-height: 0px; margin:0px\"></div>`);
+        division.append(`<div class=\"mdl-card mdl-shadow--2dp reveal business-card\" id=\"business-card-`+i+`\" style=\"min-height: 0px; margin:0px;\"></div>`);
     }
     drawBusinessCards();
 }
@@ -295,32 +295,32 @@ function dependentOnSize()
     $('#video').css('height',$(window).height() - 65);
     $('#video').css('width',$(window).width())
 
-    if ($(window).width() >= 1440)
-    {
-        $('.feature-card').css('width', ($(window).width()/8) - 10);
-        $('.feature-card').css('height', $('.feature-card').css('width'));
-        $('.feature-card').css('margin', '5px');
-    }
     if (/*$(window).height() >= 768 && */$(window).width() >= 840)
     {
         $('h1').css("font-size","50px");
         $('.header').css('font-size','35px');
+        $('.header').css('margin-top','20px');
 
         $('#busy-text').css('font-size','25px');
         $('#busy-text').css('margin-top','25px');
         $('.para').css('font-size','20px');
-        $('.para').css('margin','10px');
+        $('.para').css('margin','13px');
+
+        $('.material-icons').css('font-size','100px');
+
+        $('.business-card-para').css('font-size','20px');
+        $('.business-card-para').css('margin-top','20px');
 
         $('.gen-text').css('font-size','23px');
         $('.gen-text').css('margin-top','20px');
 
         $('.about-us-card').css('height','175px');
-        $('#about_us').css('margin-top',$(window).height()/2 - 65 - $('#about_us').css('height'));
+        $('#about_us').css('margin-top', (($('#video').height()/2) - ($('.about-us-card').height()/2)));
 
         $('.mdl-navigation__link').css('padding','2px 20px 0px 0px');
         $('.navigation-links').css('font-size','14px');
 
-        $('.product-card-height').css('height','300px');
+        $('.product-card-height').css('height','250px');
 
         $('.feature-card').css('width', ($(window).width()/6) - 10);
         $('.feature-card').css('height', $('.feature-card').css('width'));
@@ -335,10 +335,16 @@ function dependentOnSize()
     {
         $('h1').css("font-size","22px");
         $('.header').css('font-size','20px');
+        $('.header').css('margin-top','10px');
 
         $('#busy-text').css('font-size','12px');
         $('.para').css('font-size','10px');
         $('.para').css('margin','5px');
+
+        $('.material-icons').css('font-size','40px');
+
+        $('.business-card-para').css('font-size','15px');
+        $('.business-card-para').css('margin-top','2px');
 
         $('.gen-text').css('font-size','18px');
         $('.gen-text').css('margin-top','12px');
@@ -358,7 +364,7 @@ function dependentOnSize()
         $('.feature-card').css('height', $('.feature-card').css('width'));
         $('.feature-card').css('margin', '5px');
 
-        $('.business-card').css('width',$(window).width()/4 - 60);
+        $('.business-card').css('width',$(window).width()/2 - 60);
         $('.business-card').css('height', '300px');
         $('.business-card').css('margin', '30px');
     }
@@ -367,15 +373,21 @@ function dependentOnSize()
     {
         $('h1').css("font-size","13px");
         $('.header').css('font-size','12px');
+        $('.header').css('margin-top','0px');
 
         $('#busy-text').css('font-size','10px');
         $('.para').css('font-size','8px');
-        $('.para').css('margin','2px');
+        $('.para').css('margin','1px');
+
+        $('.material-icons').css('font-size','10px');
+
+        $('.business-card-para').css('font-size','12px');
+        $('.business-card-para').css('margin-top','0px');
 
         $('.gen-text').css('font-size','10px');
         $('.gen-text').css('margin-top','5px');
 
-        $('.about-us-card').css('height','70px');
+        $('.about-us-card').css('height','50px');
         $('#about_us').css('margin-top',$(window).height()/2 - 65 - $('#about_us').css('height'));
 
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
@@ -390,7 +402,7 @@ function dependentOnSize()
         $('.feature-card').css('height', $('.feature-card').css('width'));
         $('.feature-card').css('margin', '5px');
 
-        $('.business-card').css('width',$(window).width()/4 - 30);
+        $('.business-card').css('width',$(window).width()/2 - 30);
         $('.business-card').css('height', '150px');
         $('.business-card').css('margin', '15px');
     }

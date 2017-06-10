@@ -229,57 +229,49 @@ function drawBusinessCards()
                 $('#business-card-' + i).css('background-color','#212121');
                 card.append(`<div class=\"business-card-margin\"></div>`);
                 card = card.children();
-                card.append(`<p class=\"business-card-white business-card-text\">General</p>`);
-                card.append(`<p class=\"business-card-white business-card-text\">Accounting</p>`);
+                card.append(`<p class=\"business-card-white business-card-text\">General Accounting</p>`);
                 break;
             case 1:
                 $('#business-card-' + i).css('background-color','#424242');
                 card.append(`<div class=\"business-card-margin\"></div>`);
                 card = card.children();
-                card.append(`<p class=\"business-card-white business-card-text\">General</p>`);
-                card.append(`<p class=\"business-card-white business-card-text\">Accounting</p>`);
+                card.append(`<p class=\"business-card-white business-card-text\">Textile</p>`);
                 break;
             case 2:
                 $('#business-card-' + i).css('background-color','#616161');
                 card.append(`<div class=\"business-card-margin\"></div>`);
                 card = card.children();
-                card.append(`<p class=\"business-card-white business-card-text\">General</p>`);
-                card.append(`<p class=\"business-card-white business-card-text\">Accounting</p>`);
+                card.append(`<p class=\"business-card-white business-card-text\">Finance</p>`);
                 break;
             case 3:
                 $('#business-card-' + i).css('background-color','#757575');
                 card.append(`<div class=\"business-card-margin\"></div>`);
                 card = card.children();
-                card.append(`<p class=\"business-card-white business-card-text\">General</p>`);
-                card.append(`<p class=\"business-card-white business-card-text\">Accounting</p>`);
+                card.append(`<p class=\"business-card-white business-card-text\">Ad Agencies</p>`);
                 break;
             case 4:
                 $('#business-card-' + i).css('background-color','#9E9E9E');
                 card.append(`<div class=\"business-card-margin\"></div>`);
                 card = card.children();
-                card.append(`<p class=\"business-card-black business-card-text\">General</p>`);
-                card.append(`<p class=\"business-card-black business-card-text\">Accounting</p>`);
+                card.append(`<p class=\"business-card-black business-card-text\">Merchants</p>`);
                 break;
             case 5:
                 $('#business-card-' + i).css('background-color','#BDBDBD');
                 card.append(`<div class=\"business-card-margin\"></div>`);
                 card = card.children();
-                card.append(`<p class=\"business-card-black business-card-text\">General</p>`);
-                card.append(`<p class=\"business-card-black business-card-text\">Accounting</p>`);
+                card.append(`<p class=\"business-card-black business-card-text\">Chemical Traders & Manufacturers</p>`);
                 break;
             case 6:
                 $('#business-card-' + i).css('background-color','#E0E0E0');
                 card.append(`<div class=\"business-card-margin\"></div>`);
                 card = card.children();
-                card.append(`<p class=\"business-card-black business-card-text\">General</p>`);
-                card.append(`<p class=\"business-card-black business-card-text\">Accounting</p>`);
+                card.append(`<p class=\"business-card-black business-card-text\">Vehicle Service Centers</p>`);
                 break;
             case 7:
                 $('#business-card-' + i).css('background-color','#EEEEEE');
                 card.append(`<div class=\"business-card-margin\"></div>`);
                 card = card.children();
-                card.append(`<p class=\"business-card-black business-card-text\">General</p>`);
-                card.append(`<p class=\"business-card-black business-card-text\">Accounting</p>`);
+                card.append(`<p class=\"business-card-black business-card-text\">Diamond Traders & Manufacturers</p>`);
                 break;
         }
     }
@@ -398,7 +390,7 @@ function dependentOnSize()
         $('.feature-card').css('width', '75px');
         $('.feature-card').css('height', $('.feature-card').css('width'));
 
-        $('.feature-card').css('width', $(window).width() - 10);
+        $('.feature-card').css('width', $(window).width()/2 - 10);
         $('.feature-card').css('height', $('.feature-card').css('width'));
         $('.feature-card').css('margin', '5px');
 

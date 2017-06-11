@@ -339,7 +339,7 @@ function dependentOnSize()
         $('.gen-text').css('font-size','18px');
         $('.gen-text').css('margin-top','12px');
 
-        $('.about-us-card').css('height','130px');
+        $('.about-us-card').css('height','120px');
 
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');

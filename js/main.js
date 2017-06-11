@@ -300,8 +300,8 @@ function dependentOnSize()
 
         $('.material-icons').css('font-size','80px');
 
-        $('.business-card-para').css('font-size','19px');
-        $('.business-card-para').css('margin-top','20px');
+        $('.business-card-para').css('font-size','19px');// Feature Card
+        $('.business-card-para').css('margin-top','20px');// Feature Card
 
         $('.gen-text').css('font-size','23px');
         $('.gen-text').css('margin-top','20px');
@@ -317,6 +317,8 @@ function dependentOnSize()
 
         $('.business-card').css('width',$(window).width()/4 - 90);
         $('.business-card').css('margin', '45px');
+
+        $('.business-card-text').css('font-size',);
     }
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
@@ -331,8 +333,8 @@ function dependentOnSize()
 
         $('.material-icons').css('font-size','60px');
 
-        $('.business-card-para').css('font-size','17px');
-        $('.business-card-para').css('margin-top','2px');
+        $('.business-card-para').css('font-size','17px');// Feature Card
+        $('.business-card-para').css('margin-top','2px');// Feature Card
 
         $('.gen-text').css('font-size','18px');
         $('.gen-text').css('margin-top','12px');
@@ -367,8 +369,8 @@ function dependentOnSize()
 
         $('.material-icons').css('font-size','50px');
 
-        $('.business-card-para').css('font-size','15px');
-        $('.business-card-para').css('margin-top','0px');
+        $('.business-card-para').css('font-size','15px');// Feature Card
+        $('.business-card-para').css('margin-top','0px');// Feature Card
 
         $('.gen-text').css('font-size','10px');
         $('.gen-text').css('margin-top','5px');
@@ -397,6 +399,8 @@ function dependentOnSize()
 
     var product_image = $('#3').children().first().children();
     product_image.css('height',$('.product-card-height').css('height'));
+
+    $('.top-margin').css('margin-top',parseInt($('.about-us-card').css('height'))/2 - (parseInt($('#aboutUs_header').css('font-size')) + parseInt($('.gen-text').css('font-size'))));
 
     $('#about_us').css('margin-top',$(window).height()/2 - 65 - parseInt($('#about_us').css('height'))/2); //Align vertically and horizontally at center
 

@@ -300,7 +300,7 @@ function dependentOnSize()
 
         $('.material-icons').css('font-size','80px');
 
-        $('.business-card-para').css('font-size','20px');
+        $('.business-card-para').css('font-size','19px');
         $('.business-card-para').css('margin-top','20px');
 
         $('.gen-text').css('font-size','23px');
@@ -334,9 +334,9 @@ function dependentOnSize()
         $('.para').css('font-size','10px');
         $('.para').css('margin','5px');
 
-        $('.material-icons').css('font-size','40px');
+        $('.material-icons').css('font-size','55px');
 
-        $('.business-card-para').css('font-size','15px');
+        $('.business-card-para').css('font-size','17px');
         $('.business-card-para').css('margin-top','2px');
 
         $('.gen-text').css('font-size','18px');

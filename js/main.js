@@ -307,7 +307,6 @@ function dependentOnSize()
         $('.gen-text').css('margin-top','20px');
 
         $('.about-us-card').css('height','175px');
-        $('#about_us').css('margin-top', (($('#video').height()/2) - ($('.about-us-card').height()/2)));
 
         $('.mdl-navigation__link').css('padding','2px 20px 0px 0px');
         $('.navigation-links').css('font-size','14px');
@@ -325,6 +324,8 @@ function dependentOnSize()
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
     {
+        $('.product-card-height').css('width', '100%');
+
         $('h1').css("font-size","22px");
         $('.header').css('font-size','20px');
         $('.header').css('margin-top','10px');
@@ -342,7 +343,6 @@ function dependentOnSize()
         $('.gen-text').css('margin-top','12px');
 
         $('.about-us-card').css('height','130px');
-        $('#about_us').css('margin-top',$(window).height()/2 - 65 - $('#about_us').css('height'));
 
         $('.mdl-navigation__link').css('padding','2px 8px 0px 0px');
         $('.navigation-links').css('font-size','12px');
@@ -380,7 +380,6 @@ function dependentOnSize()
         $('.gen-text').css('margin-top','5px');
 
         $('.about-us-card').css('height','50px');
-        $('#about_us').css('margin-top',$(window).height()/2 - 65 - $('#about_us').css('height'));
 
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');
@@ -407,4 +406,7 @@ function dependentOnSize()
 
     var product_image = $('#3').children().first().children();
     product_image.css('height',$('.product-card-height').css('height'));
+
+    $('#about_us').css('margin-top',$(window).height()/2 - 65 - $('.about-us-card').css('height'));
+
 }

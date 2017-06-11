@@ -324,8 +324,6 @@ function dependentOnSize()
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
     {
-        $('.product-card-height').css('width', '100%');
-
         $('h1').css("font-size","22px");
         $('.header').css('font-size','20px');
         $('.header').css('margin-top','10px');
@@ -363,6 +361,8 @@ function dependentOnSize()
     //Mobile size
     else
     {
+        $('.product-card-height').css('width', '100%');
+
         $('h1').css("font-size","13px");
         $('.header').css('font-size','12px');
         $('.header').css('margin-top','0px');

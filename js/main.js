@@ -403,6 +403,8 @@ function dependentOnSize()
     $('.feature-card').css('height', $('.feature-card').css('width'));
     $('.feature-card').css('margin', '5px');
 
+    $('.material-icons').css('margin-top',parseInt($('.feature-card').css('height'))/2 - parseInt($('.material-icons').css('font-size')));
+
     $('.business-card').css('height', $('.business-card').css('width'));
 
 

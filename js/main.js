@@ -371,7 +371,7 @@ function dependentOnSize()
         $('.para').css('font-size','8px');
         $('.para').css('margin','1px');
 
-        $('.material-icons').css('font-size','30px');
+        $('.material-icons').css('font-size','40px');
 
         $('.business-card-para').css('font-size','12px');
         $('.business-card-para').css('margin-top','0px');

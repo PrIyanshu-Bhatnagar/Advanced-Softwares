@@ -298,7 +298,7 @@ function dependentOnSize()
         $('.para').css('font-size','20px');
         $('.para').css('margin','13px');
 
-        $('.material-icons').css('font-size','100px');
+        $('.material-icons').css('font-size','80px');
 
         $('.business-card-para').css('font-size','20px');
         $('.business-card-para').css('margin-top','20px');
@@ -319,7 +319,7 @@ function dependentOnSize()
         $('.feature-card').css('margin', '5px');
 
         $('.business-card').css('width',$(window).width()/4 - 90);
-        $('.business-card').css('height', '400px');
+        $('.business-card').css('height', $('.business-card').css('width'));
         $('.business-card').css('margin', '45px');
     }
     //Tablet size
@@ -357,7 +357,7 @@ function dependentOnSize()
         $('.feature-card').css('margin', '5px');
 
         $('.business-card').css('width',$(window).width()/2 - 60);
-        $('.business-card').css('height', '300px');
+        $('.business-card').css('height', $('.business-card').css('width'));
         $('.business-card').css('margin', '30px');
     }
     //Mobile size
@@ -371,7 +371,7 @@ function dependentOnSize()
         $('.para').css('font-size','8px');
         $('.para').css('margin','1px');
 
-        $('.material-icons').css('font-size','10px');
+        $('.material-icons').css('font-size','30px');
 
         $('.business-card-para').css('font-size','12px');
         $('.business-card-para').css('margin-top','0px');
@@ -385,7 +385,7 @@ function dependentOnSize()
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');
 
-        $('.product-card-height').css('height','150px');
+        $('.product-card-height').css('height','170px');
 
         $('.feature-card').css('width', '75px');
         $('.feature-card').css('height', $('.feature-card').css('width'));
@@ -395,7 +395,7 @@ function dependentOnSize()
         $('.feature-card').css('margin', '5px');
 
         $('.business-card').css('width',$(window).width()/2 - 30);
-        $('.business-card').css('height', '150px');
+        $('.business-card').css('height', $('.business-card').css('width'));
         $('.business-card').css('margin', '15px');
     }
 

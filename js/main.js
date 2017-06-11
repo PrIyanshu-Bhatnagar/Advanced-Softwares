@@ -373,7 +373,7 @@ function dependentOnSize()
         $('.gen-text').css('font-size','10px');
         $('.gen-text').css('margin-top','5px');
 
-        $('.about-us-card').css('height','50px');
+        $('.about-us-card').css('height','30px');
 
         $('.mdl-navigation__link').css('padding','2px 3px 0px 0px');
         $('.navigation-links').css('font-size','10px');
@@ -386,7 +386,7 @@ function dependentOnSize()
         $('.feature-card').css('height', $('.feature-card').css('width'));
 
         $('.business-card').css('width',$(window).width()/2 - 30);
-        $('.business-card').css('margin', '15px');
+        $('.business-card').css('margin', '10px');
     }
 
     var product_image = $('#1').children().first().children();
@@ -398,7 +398,7 @@ function dependentOnSize()
     var product_image = $('#3').children().first().children();
     product_image.css('height',$('.product-card-height').css('height'));
 
-    $('#about_us').css('margin-top',$(window).height()/2 - 65 - parseInt($('#about_us').css('height'))/2);
+    $('#about_us').css('margin-top',$(window).height()/2 - 65 - parseInt($('#about_us').css('height'))/2); //Align vertically and horizontally at center
 
     $('.feature-card').css('height', $('.feature-card').css('width'));
     $('.feature-card').css('margin', '5px');

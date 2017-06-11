@@ -323,7 +323,7 @@ function dependentOnSize()
     //Tablet size
     else if (/*$(window).height() >= 660 && */$(window).width() >= 440)
     {
-        $('h1').css("font-size","22px");
+        $('h1').css("font-size","26px");
         $('.header').css('font-size','20px');
         $('.header').css('margin-top','10px');
 
@@ -359,7 +359,7 @@ function dependentOnSize()
     {
         $('.product-card-height').css('width', '100%');
 
-        $('h1').css("font-size","13px");
+        $('h1').css("font-size","16px");
         $('.header').css('font-size','12px');
         $('.header').css('margin-top','0px');
 
@@ -372,7 +372,7 @@ function dependentOnSize()
         $('.business-card-para').css('font-size','15px');// Feature Card
         $('.business-card-para').css('margin-top','0px');// Feature Card
 
-        $('.gen-text').css('font-size','10px');
+        $('.gen-text').css('font-size','12px');
         $('.gen-text').css('margin-top','5px');
 
         $('.about-us-card').css('height','30px');

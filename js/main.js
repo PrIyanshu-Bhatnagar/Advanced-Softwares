@@ -314,11 +314,8 @@ function dependentOnSize()
         $('.product-card-height').css('height','250px');
 
         $('.feature-card').css('width', ($(window).width()/6) - 10);
-        $('.feature-card').css('height', $('.feature-card').css('width'));
-        $('.feature-card').css('margin', '5px');
 
         $('.business-card').css('width',$(window).width()/4 - 90);
-        $('.business-card').css('height', $('.business-card').css('width'));
         $('.business-card').css('margin', '45px');
     }
     //Tablet size
@@ -351,11 +348,8 @@ function dependentOnSize()
         $('.feature-card').css('height', $('.feature-card').css('width'));
 
         $('.feature-card').css('width', ($(window).width()/4) - 10);
-        $('.feature-card').css('height', $('.feature-card').css('width'));
-        $('.feature-card').css('margin', '5px');
 
         $('.business-card').css('width',$(window).width()/2 - 60);
-        $('.business-card').css('height', $('.business-card').css('width'));
         $('.business-card').css('margin', '30px');
     }
     //Mobile size
@@ -387,14 +381,11 @@ function dependentOnSize()
         $('.product-card-height').css('height','170px');
 
         $('.feature-card').css('width', '75px');
-        $('.feature-card').css('height', $('.feature-card').css('width'));
 
         $('.feature-card').css('width', $(window).width()/2 - 10);
         $('.feature-card').css('height', $('.feature-card').css('width'));
-        $('.feature-card').css('margin', '5px');
 
         $('.business-card').css('width',$(window).width()/2 - 30);
-        $('.business-card').css('height', $('.business-card').css('width'));
         $('.business-card').css('margin', '15px');
     }
 
@@ -407,6 +398,12 @@ function dependentOnSize()
     var product_image = $('#3').children().first().children();
     product_image.css('height',$('.product-card-height').css('height'));
 
-    $('#about_us').css('margin-top',$(window).height()/2 - 65 - $('.about-us-card').css('height'));
+    $('#about_us').css('margin-top',$(window).height()/2 - 65 - parseInt($('#about_us').css('height'))/2);
+
+    $('.feature-card').css('height', $('.feature-card').css('width'));
+    $('.feature-card').css('margin', '5px');
+
+    $('.business-card').css('height', $('.business-card').css('width'));
+
 
 }

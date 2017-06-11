@@ -289,7 +289,7 @@ function dependentOnSize()
 
     if (/*$(window).height() >= 768 && */$(window).width() >= 840)
     {
-        $('h1').css("font-size","50px");
+        $('h1').css("font-size","60px");
         $('.header').css('font-size','35px');
         $('.header').css('margin-top','20px');
 

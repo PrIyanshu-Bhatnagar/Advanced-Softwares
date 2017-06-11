@@ -328,7 +328,7 @@ function dependentOnSize()
         $('.header').css('margin-top','10px');
 
         $('#busy-text').css('font-size','12px');
-        $('.para').css('font-size','10px');
+        $('.para').css('font-size','12px');
         $('.para').css('margin','5px');
 
         $('.material-icons').css('font-size','60px');

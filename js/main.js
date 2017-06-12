@@ -2,7 +2,7 @@ var aboutUsText = "\"We are in this business since 1992\""
 var servicesText= "";
 var busyText = `BUSY is an integrated business accounting software for Micro, Small and Medium businesses with over 1,50,000 installations (over 6 Lac Users) worldwide.`;
 var radixText =`Radix is a full-featured Windows-based Financial Accounting Software. It has an array of powerful features that can be configured for any type of Business/Domain.`;
-
+var relyText = `RELY is a full-fledged Financial Accounting & Inventory Software which can be used to write complete books of accounts and maintain stock and control inventory.`;
 $(document).ready(function()
 {
     aboutDivison();
@@ -107,6 +107,7 @@ function createSection()
                      </div>
                      <div class="reveal" style=\"width: 50%; height:100%;\">
                         <h2 align=\"center\" class=\"header reveal\">RELY</h2>
+                        <p align=\"center\" class=\"para reveal\">`+relyText+`</p>
                      </div>`);
 }
 

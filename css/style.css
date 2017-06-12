@@ -17,6 +17,7 @@
 h1{
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    font-family: 'Roboto Slab', serif;
 }
 p{
     color: #616161;
@@ -120,7 +121,8 @@ margin:0px;
 {
     align-items: left;
     font-family: 'Roboto Slab', serif;
-    font-size: 22px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 .business-card-black
 {
@@ -130,4 +132,10 @@ margin:0px;
 .business-card-white
 {
     color: #F5F5F5;
+}
+.service-card-para
+{
+    font-size:24px;
+    color: white;
+    font-family: 'Monoton', cursive;
 }

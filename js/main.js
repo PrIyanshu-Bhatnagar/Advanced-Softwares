@@ -118,16 +118,19 @@ function cardWidthAdjustment() {
 function serviceDivison() {
     var serDiv = $('#services_grid');
     serDiv.empty();
-    serDiv.append(`<div class=\"mdl-card mdl-shadow--2dp reveal service-card\" >
-                        <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px\">
+    serDiv.append(`<div class=\"mdl-card mdl-shadow--2dp reveal service-card\" style=\"background-color: #424242;\">
+                        <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px;\">
+                            <h1 align=\"center\" class=\"service-card-para\">Software Training</h1>
                         </div>
                     </div>
-                    <div class=\"mdl-card mdl-shadow--2dp reveal service-card\" id="service-left-card">
-                        <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px\">
+                    <div class=\"mdl-card mdl-shadow--2dp reveal service-card\" id="service-left-card" style=\"background-color: #424242;\">
+                        <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px;">
+                            <h1 align=\"center\" class=\"service-card-para\">Online Support</h1>
                         </div>
                     </div>
-                    <div class=\"mdl-card mdl-shadow--2dp reveal service-card\" >
-                        <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px\">
+                    <div class=\"mdl-card mdl-shadow--2dp reveal service-card\" style=\"background-color: #424242;\">
+                        <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px;\">
+                            <h1 align=\"center\" class=\"service-card-para\">Staff Visit</h1>
                         </div>
                     </div>
                     `);
@@ -300,7 +303,7 @@ function dependentOnSize()
 
         $('.material-icons').css('font-size','80px');
 
-        $('.business-card-para').css('font-size','19px');// Feature Card
+        $('.business-card-para').css('font-size','22px');// Feature Card
         $('.business-card-para').css('margin-top','20px');// Feature Card
 
         $('.gen-text').css('font-size','23px');
@@ -414,5 +417,5 @@ function dependentOnSize()
     {
             $('#business-card-' + i).children().first().css('margin-top',parseInt($('#business-card-' + i).css('height'))/2 - parseInt($('.business-card-text').css('font-size')));
     }
-
+    $('.service-card-para').css('margin-top',parseInt($('.service-card').css('height'))/2 - parseInt($('.service-card-para').css('font-size')));
 }

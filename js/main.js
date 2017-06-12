@@ -410,6 +410,9 @@ function dependentOnSize()
     $('.material-icons').css('margin-top',parseInt($('.feature-card').css('height'))/2 - parseInt($('.material-icons').css('font-size')));
 
     $('.business-card').css('height', $('.business-card').css('width'));
-
+    for (var i = 0; i < 8; i++)
+    {
+            $('#business-card-' + i).children().first().css('margin-top',parseInt($('#business-card-' + i).css('height'))/2 - parseInt($('.business-card-text').css('font-size')));
+    }
 
 }

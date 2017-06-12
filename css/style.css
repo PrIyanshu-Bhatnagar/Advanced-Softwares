@@ -144,6 +144,8 @@ margin:0px;
 .business-card-text
 {
     align-items: left;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
 }
 .business-card-black
 {

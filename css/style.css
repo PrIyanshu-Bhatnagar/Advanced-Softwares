@@ -4,8 +4,8 @@
 }
 
 #aboutUs_header{
-font-family: 'Merriweather', serif;
-font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
 }
 #footer_logo{
     font-family: 'Kaushan Script', cursive;
@@ -23,7 +23,7 @@ p{
     font-size: 25px;
     padding: 0px 0px 0px 0px;
     margin: 0px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Slab', serif;
 }
 h2{
     margin: 0px 0px 0px 0px
@@ -34,7 +34,7 @@ video {
 .header{
     color: #424242;
     font-size: 35px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Slab', serif;
 }
 .content
 {
@@ -68,29 +68,8 @@ video {
     margin-top: 20px;
     padding-bottom: 20px;
     color: #424242;
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Slab', serif;
     font-weight: bold;
-}
-
-#busy-text{
-    color: #616161;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: 'Inconsolata', monospace;
-}
-
-#reddix-text{
-    color: #616161;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: 'Merriweather', serif;
-}
-
-#rely-text{
-    color: #616161;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: 'Merriweather', serif;
 }
 .product-card-height{
 height: 350px
@@ -107,10 +86,6 @@ margin:0px;
     margin-bottom: 10px;
     min-height: 230px;
 }
-.icon-0
-{
-    background: url(photos/ic_accessibility_black_24dp_2x.png)center/cover;
-}
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -124,7 +99,7 @@ margin:0px;
   white-space: nowrap;
   direction: ltr;
   vertical-align: center;
-
+  color: #424242;
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */

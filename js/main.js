@@ -30,7 +30,7 @@ function aboutDivison()
 {
     var aboutDiv = $("#about_us");
     aboutDiv.empty();
-    aboutDiv.append(`<div class=\"mdl-cell mdl-cell--12-col  reveal\" align=\"center\">
+    aboutDiv.append(`<div class=\"mdl-cell mdl-cell--12-col\" align=\"center\">
                         <div class=\"demo-card-wide mdl-card mdl-shadow--2dp about-us-card\" style=\"background: rgba(0,0,0,0.12);\" >
                             <div class=\"mdl-card__supporting-text top-margin\">
                                 <h1 align=\"center\" id=\"aboutUs_header\" style=\"color: white\">ADVANCED SOFTWARES</h1>
@@ -55,10 +55,10 @@ function mainDivison()
     develop_Product();
 }
 function createCard(object,id){
-    object.append(`<div class=\"mdl-cell mdl-cell--12-col product-card-height\" id=\"card\" style=\"margin-bottom: 30px;\">
-                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp reveal\" style=\"min-height:0px;\">
-                            <div class=\"mdl-card__supporting-text reveal\" style=\"width: 100%; padding: 0px\">
-                                <div class=\"mdl-grid reveal\" id=\"` +id + `\" style=\"padding: 0px\">
+    object.append(`<div class=\"mdl-cell mdl-cell--12-col product-card-height reveal1\" id=\"card\" style=\"margin-bottom: 30px;\">
+                        <div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"min-height:0px;\">
+                            <div class=\"mdl-card__supporting-text\" style=\"width: 100%; padding: 0px\">
+                                <div class=\"mdl-grid\" id=\"` +id + `\" style=\"padding: 0px\">
                                 </div>
                             </div>
                         </div>
@@ -82,32 +82,32 @@ function createSection()
 {
     var product_image = $("#1");
 
-    product_image.append(`<div class="reveal" style=\"width: 50%; height:100%;\">
+    product_image.append(`<div class=\"\" style=\"width: 50%; height:100%;\">
                             <image style=\"width:100%\" class=\"mdl-shadow--2dp\" src=\"photos/busy.jpg\"> </image>
                          </div>
-                         <div class=\"reveal\" style=\"width: 50%; height:100%;\">
-                            <h2 align=\"center\" class=\"header reveal\">BUSY</h2>
-                            <p align=\"center\" class=\"para reveal\">`+busyText+`</p>
+                         <div class=\"\" style=\"width: 50%; height:100%;\">
+                            <h2 align=\"center\" class=\"header\">BUSY</h2>
+                            <p align=\"center\" class=\"para\">`+busyText+`</p>
                          </div>`);
 
     product_image = $('#2');
 
-    product_image.append(`<div class=\"reveal\" style=\"width: 50%; height:100%;\">
+    product_image.append(`<div class=\"\" style=\"width: 50%; height:100%;\">
                         <image style=\"width:100%\" class=\"mdl-shadow--2dp\" src=\"photos/radix.png\"> </image>
                      </div>
-                     <div class="reveal" style=\"width: 50%; height:100%;\">
-                        <h2 align=\"center\" class=\"header reveal\">RADIX</h2>
-                        <p align=\"center\" class=\"para reveal\">`+radixText+`</p>
+                     <div class=\"\" style=\"width: 50%; height:100%;\">
+                        <h2 align=\"center\" class=\"header\">RADIX</h2>
+                        <p align=\"center\" class=\"para\">`+radixText+`</p>
                      </div>`);
 
     product_image = $('#3');
 
-    product_image.append(`<div class=\"reveal\" style=\"width: 50%; height:100%;\">
+    product_image.append(`<div class=\"\" style=\"width: 50%; height:100%;\">
                         <image style=\"width:100%\" class=\"mdl-shadow--2dp\" src=\"photos/rely.png\"> </image>
                      </div>
-                     <div class="reveal" style=\"width: 50%; height:100%;\">
-                        <h2 align=\"center\" class=\"header reveal\">RELY</h2>
-                        <p align=\"center\" class=\"para reveal\">`+relyText+`</p>
+                     <div class=\"\" style=\"width: 50%; height:100%;\">
+                        <h2 align=\"center\" class=\"header\">RELY</h2>
+                        <p align=\"center\" class=\"para\">`+relyText+`</p>
                      </div>`);
 }
 
@@ -119,18 +119,18 @@ function cardWidthAdjustment() {
 function serviceDivison() {
     var serDiv = $('#services_grid');
     serDiv.empty();
-    serDiv.append(`<div class=\"mdl-card mdl-shadow--2dp reveal service-card\" style=\"background-color: #424242;\">
-                        <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px;\">
+    serDiv.append(`<div class=\"mdl-card mdl-shadow--2dp service-card\" id=\"service_card_1\" style=\"background-color: #424242;\">
+                        <div class=\"mdl-card__supporting-text\" style=\"width:100%; padding:0px;\">
                             <h1 align=\"center\" class=\"service-card-para\">Software Training</h1>
                         </div>
                     </div>
-                    <div class=\"mdl-card mdl-shadow--2dp reveal service-card\" id="service-left-card" style=\"background-color: #424242;\">
-                        <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px;">
+                    <div class=\"mdl-card mdl-shadow--2dp service-card\" id="service-left-card" style=\"background-color: #424242;\">
+                        <div class=\"mdl-card__supporting-text\" style=\"width:100%; padding:0px;">
                             <h1 align=\"center\" class=\"service-card-para\">Online Support</h1>
                         </div>
                     </div>
-                    <div class=\"mdl-card mdl-shadow--2dp reveal service-card\" style=\"background-color: #424242;\">
-                        <div class=\"mdl-card__supporting-text reveal\" style=\"width:100%; padding:0px;\">
+                    <div class=\"mdl-card mdl-shadow--2dp service-card\" style=\"background-color: #424242;\">
+                        <div class=\"mdl-card__supporting-text\" style=\"width:100%; padding:0px;\">
                             <h1 align=\"center\" class=\"service-card-para\">Staff Visit</h1>
                         </div>
                     </div>
@@ -142,8 +142,8 @@ function createFeatureCards(){
     division.empty();
     for(var i = 0; i < 12; i++)
     {
-        division.append(`<div class=\"mdl-card mdl-shadow--2dp feature-card reveal\" align=\"center\" id=\"feature-card-`+i+`\" style=\"min-height: 0px\">
-                            <div class=\"mdl-card__supporting-text reveal\" align=\"center\" style=\"padding: 0; padding-top: 5px;\">
+        division.append(`<div class=\"mdl-card mdl-shadow--2dp feature-card\" align=\"center\" id=\"feature-card-`+i+`\" style=\"min-height: 0px\">
+                            <div class=\"mdl-card__supporting-text\" align=\"center\" style=\"padding: 0; padding-top: 5px;\">
 
                             </div>
                         </div>`);

@@ -7,6 +7,24 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jQuery.min.js"></script>
   <script src="js/scrollreveal-master/dist/scrollreveal.min.js"></script>
+  <script>
+      window.sr = ScrollReveal({reset:true, mobile: true, duration:1000, distance:'400px', origin: 'right', easing: 'linear',
+ });
+
+      // Add class to <html> if ScrollReveal is supported
+      // Note: this method is deprecated, and only works in version 3
+      if (sr.isSupported()) {
+        document.documentElement.classList.add('sr');
+      }
+
+    </script>
+
+    <style>
+
+      /* Ensure elements load hidden before ScrollReveal runs */
+      .sr .fooReveal { visibility: hidden; }
+
+    </style>
   <link href="https://fonts.googleapis.com/css?family=Monoton|Roboto+Slab|Kaushan+Script" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -90,7 +108,7 @@
 
         </div>
       </div>
-        <div style="background: rgba(0,0,0,0.1);padding-bottom: 20px">
+        <div id="professions" style="background: rgba(0,0,0,0.1);padding-bottom: 20px">
         <div><h1 align="center" class="top-margin">PROFESSIONS</h1></div>
         <div class="mdl-grid" align="center" id="business-segments" style="padding: 0px">
 

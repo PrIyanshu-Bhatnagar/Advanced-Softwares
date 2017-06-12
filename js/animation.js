@@ -1,7 +1,3 @@
-$(window).ready(function()
-{
-    window.sr = ScrollReveal({ mobile: true, reset: true});
-    //sr.reveal(('.business-card'), { origin: 'left'}, 50);
-});
-//sr.reveal({ origin: 'bottom', container: '#product_image'});
-//sr.reveal('',{ origin: 'bottom', container: '#services_grid'});
+window.sr = ScrollReveal({reset:true, mobile: true, duration:1000, distance:'400px', origin: 'right', easing: 'linear',
+ });
+sr.reveal('#about_us',{origin: 'top'});

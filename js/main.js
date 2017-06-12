@@ -55,7 +55,7 @@ function mainDivison()
     develop_Product();
 }
 function createCard(object,id){
-    object.append(`<div class=\"mdl-cell mdl-cell--12-col product-card-height reveal1\" id=\"card\" style=\"margin-bottom: 30px;\">
+    object.append(`<div class=\"mdl-cell mdl-cell--12-col product-card-height fooReveal2\" id=\"card\" style=\"margin-bottom: 30px;\">
                         <div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" style=\"min-height:0px;\">
                             <div class=\"mdl-card__supporting-text\" style=\"width: 100%; padding: 0px\">
                                 <div class=\"mdl-grid\" id=\"` +id + `\" style=\"padding: 0px\">
@@ -119,17 +119,17 @@ function cardWidthAdjustment() {
 function serviceDivison() {
     var serDiv = $('#services_grid');
     serDiv.empty();
-    serDiv.append(`<div class=\"mdl-card mdl-shadow--2dp service-card\" id=\"service_card_1\" style=\"background-color: #424242;\">
+    serDiv.append(`<div class=\"mdl-card mdl-shadow--2dp service-card fooReveal3\" id=\"service_card_1\" style=\"background-color: #424242;\">
                         <div class=\"mdl-card__supporting-text\" style=\"width:100%; padding:0px;\">
                             <h1 align=\"center\" class=\"service-card-para\">Software Training</h1>
                         </div>
                     </div>
-                    <div class=\"mdl-card mdl-shadow--2dp service-card\" id="service-left-card" style=\"background-color: #424242;\">
+                    <div class=\"mdl-card mdl-shadow--2dp service-card fooReveal3\" id="service-left-card" style=\"background-color: #424242;\">
                         <div class=\"mdl-card__supporting-text\" style=\"width:100%; padding:0px;">
                             <h1 align=\"center\" class=\"service-card-para\">Online Support</h1>
                         </div>
                     </div>
-                    <div class=\"mdl-card mdl-shadow--2dp service-card\" style=\"background-color: #424242;\">
+                    <div class=\"mdl-card mdl-shadow--2dp service-card fooReveal3\" style=\"background-color: #424242;\">
                         <div class=\"mdl-card__supporting-text\" style=\"width:100%; padding:0px;\">
                             <h1 align=\"center\" class=\"service-card-para\">Staff Visit</h1>
                         </div>
@@ -142,7 +142,7 @@ function createFeatureCards(){
     division.empty();
     for(var i = 0; i < 12; i++)
     {
-        division.append(`<div class=\"mdl-card mdl-shadow--2dp feature-card\" align=\"center\" id=\"feature-card-`+i+`\" style=\"min-height: 0px\">
+        division.append(`<div class=\"mdl-card mdl-shadow--2dp feature-card fooReveal4\" align=\"center\" id=\"feature-card-`+i+`\" style=\"min-height: 0px\">
                             <div class=\"mdl-card__supporting-text\" align=\"center\" style=\"padding: 0; padding-top: 5px;\">
 
                             </div>
@@ -217,7 +217,7 @@ function createBusinessCards()
     division.empty();
     for(var i = 0; i < 8; i++)
     {
-        division.append(`<div class=\"mdl-card mdl-shadow--2dp reveal business-card\" id=\"business-card-`+i+`\" style=\"min-height: 0px; margin:0px;\"></div>`);
+        division.append(`<div class=\"mdl-card mdl-shadow--2dp business-card fooReveal5\" id=\"business-card-`+i+`\" style=\"min-height: 0px; margin:0px;\"></div>`);
     }
     drawBusinessCards();
 }

@@ -315,8 +315,8 @@ function dependentOnSize()
 
         $('.feature-card').css('width', ($(window).width()/6) - 10);
 
-        $('.business-card').css('width',$(window).width()/4 - 90);
-        $('.business-card').css('margin', '45px');
+        $('.business-card').css('width',$(window).width()/8);
+        $('.business-card').css('margin', '0px');
 
         $('.business-card-text').css('font-size',);
     }
@@ -351,8 +351,8 @@ function dependentOnSize()
 
         $('.feature-card').css('width', ($(window).width()/4) - 10);
 
-        $('.business-card').css('width',$(window).width()/2 - 60);
-        $('.business-card').css('margin', '30px');
+        $('.business-card').css('width',$(window).width()/4);
+        $('.business-card').css('margin', '0px');
     }
     //Mobile size
     else
@@ -387,8 +387,8 @@ function dependentOnSize()
         $('.feature-card').css('width', $(window).width()/2 - 10);
         $('.feature-card').css('height', $('.feature-card').css('width'));
 
-        $('.business-card').css('width',$(window).width()/2 - 30);
-        $('.business-card').css('margin', '10px');
+        $('.business-card').css('width',$(window).width()/2 );
+        $('.business-card').css('margin', '0px');
     }
 
     var product_image = $('#1').children().first().children();
